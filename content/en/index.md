@@ -10,15 +10,4 @@ hero:
   cta:
     label: Free consultation
     to: /contact
-ogImage:
-  props:
-    _238: _DELETED_
-schemaOrg: {}
-head:
-  script: []
-sitemap:
-  videos: []
-  images: []
 ---
-
-test from studio
