@@ -1,13 +1,10 @@
 <script setup>
-const { data: contact } = await useAsyncData('contact-section', () => {
-    return queryCollection('sections').path('contact').first()
-})
+// const { data: page } = await useContentEntry('section-contact', '/sections/contact')
 </script>
 
 <template>
     <section id="contact" class="bg-secondary py-16 lg:py-32">
         <div class="container">
-            <pre>{{ contact }}</pre>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div class="md:col-span-2">
                     <h2 class="text-5xl text-white font-medium text-center lg:text-left">

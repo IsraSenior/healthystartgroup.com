@@ -1,14 +1,26 @@
 import { defineContentConfig, defineCollection } from "@nuxt/content";
+import { asSeoCollection } from "@nuxtjs/seo/content";
 
 export default defineContentConfig({
   collections: {
-    pages: defineCollection({
-      type: "page",
-      source: "*.md",
-    }),
-    sections: defineCollection({
-      type: "page",
-      source: "sections/**/*",
-    }),
+    content_en: defineCollection(
+      asSeoCollection({
+        type: "page",
+        source: {
+          include: "en/**",
+          prefix: "",
+        },
+      })
+    ),
+
+    content_es: defineCollection(
+      asSeoCollection({
+        type: "page",
+        source: {
+          include: "es/**",
+          prefix: "",
+        },
+      })
+    ),
   },
 });
