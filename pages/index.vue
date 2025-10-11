@@ -10,32 +10,7 @@ useSeoMeta({
   ogImage: seo.value?.ogImage,
   twitterTitle: seo.value?.title,
   twitterDescription: seo.value?.description,
-  twitterImage: seo.value?.ogImage
-})
-
-useSeoMeta(() => {
-  const { title, description, ogImage, ...rest } = seo.value
-
-  return {
-    title,
-    description,
-    ogDescription: description,
-    ogImage,
-    twitterTitle: title,
-    twitterDescription: description,
-    twitterImage: ogImage,
-    ...rest, // por si tienes otros campos específicos
-  }
-})
-
-useHead({
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/ico',
-      href: '/favicon.ico'
-    }
-  ]
+  twitterImage: seo.value?.ogImage,
 })
 
 const hero = computed(() => page.value?.meta?.hero)
