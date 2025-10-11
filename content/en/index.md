@@ -1,7 +1,7 @@
 ---
 seo:
   title: Home
-  description: Holistic medical services driven by innovation and years of experience.
+  description: Holistic medical services driven by innovation and years of experienceas.
   ogImage: /og.png
 hero:
   title: Holistic medical services driven by innovation and years of experience.
