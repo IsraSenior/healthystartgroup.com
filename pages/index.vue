@@ -1,34 +1,13 @@
 <script setup>
+import { computed } from 'vue'
 
+const { data: home } = await useAsyncData('home', () => queryCollection('content').path('/').first())
+const homeContent = computed(() => home.value)
 </script>
 
 <template>
   <div>
-    <section id="hero" class="h-[75vh] py-16 bg-secondary flex items-center justify-center">
-      <div class="container lg:-mt-[10vh]">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div class="md:col-span-2">
-            <div>
-              <h1
-                class="text-3xl lg:text-5xl xl:text-7xl text-white font-medium leading-tight text-center lg:text-left">
-                Holistic medical services driven by innovation and years of experience
-              </h1>
-            </div>
-          </div>
-          <div class="md:col-span-1 flex items-end">
-            <div>
-              <p class="text-white text-lg lg:text-2xl font-medium mb-10 text-center lg:text-left">
-                We are team of professionals helping others to feel better with our premium services.
-              </p>
-
-              <button type="button" class="btn primary">
-                Free consultation
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ContentRenderer v-if="homeContent" :value="homeContent" />
 
     <section class="py-10 lg:py-16 bg-secondary-50">
       <div class="container">
@@ -57,7 +36,8 @@
             <div class="max-w-lg">
               <h3 class="text-5xl text-secondary font-medium text-center lg:text-left mb-5">Years of experience and lots
                 of trust</h3>
-              <p class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium">Vivamus quis mi. Phasellus
+              <p class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium">Vivamus quis mi.
+                Phasellus
                 viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu,
                 tincidunt eu, varius ut, felis.</p>
 
