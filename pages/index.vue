@@ -1,13 +1,18 @@
 <script setup>
 const { data: page } = await useContentEntry('page-home', '/')
+const url = useRequestURL();
 
 const seo = computed(() => page.value?.seo)
 
 useSeoMeta({
   title: seo.value?.title,
   description: seo.value?.description,
+
+  ogTitle: seo.value?.title,
   ogDescription: seo.value?.description,
   ogImage: seo.value?.ogImage,
+  ogUrl: url?.href,
+
   twitterTitle: seo.value?.title,
   twitterDescription: seo.value?.description,
   twitterImage: seo.value?.ogImage,
@@ -22,7 +27,6 @@ const hero = computed(() => page.value?.meta?.hero)
     <LangSwitcher />
     <section class="py-16">
       <div class="container">
-        <pre>{{ seo }}</pre>
         <pre>{{ JSON.stringify(page, null, 2) }}</pre>
       </div>
     </section>
