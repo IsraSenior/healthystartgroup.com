@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+
+  --color-white: #ffffff;
+
+  --color-primary: #0eaa95;
+  --color-primary-50: #f0fdfa;
+  --color-primary-100: #cbfcf1;
+  --color-primary-200: #96f9e4;
+  --color-primary-300: #5aeed3;
+  --color-primary-400: #28d9be;
+  --color-primary-500: #099887;
+  --color-primary-600: #0c796d;
+  --color-primary-700: #0f6059;
+  --color-primary-800: #115049;
+  --color-primary-900: #03302e;
+
+  --color-secondary: #002d74;
+  --color-secondary-50: #e9f8ff;
+  --color-secondary-100: #cef0ff;
+  --color-secondary-200: #a7e6ff;
+  --color-secondary-300: #6bdaff;
+  --color-secondary-400: #26c1ff;
+  --color-secondary-500: #0099ff;
+  --color-secondary-600: #006fff;
+  --color-secondary-700: #0054ff;
+  --color-secondary-800: #0047e6;
+  --color-secondary-900: #0042b3;
+
+  --font-satoshi: "Satoshi", sans-serif;
+}
+
+@layer base {
+  :root {
+    scroll-padding-top: 150px;
+  }
+
+  html,
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    @apply scroll-smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply font-satoshi;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply w-full inline-flex justify-center lg:w-auto rounded-full px-5 py-3.5 text-lg font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2;
+
+    &.primary {
+      @apply bg-primary hover:bg-primary-500 focus-visible:outline-primary-600;
+    }
+
+    &.secondary {
+      @apply bg-secondary hover:bg-secondary-500 focus-visible:outline-secondary-600;
+    }
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-[85rem] px-5
+  }
+}
