@@ -1,23 +1,40 @@
 ---
 seo:
-  title: Home
-  description: Holistic medical services driven by innovation and years of experience.
+  title: Holistic Medical Care in Miami | Healthy Start Group
+  description: Experience holistic medical services from Healthy Start Group's specialists, blending innovation with decades of trusted care.
+  ogTitle: Holistic Medical Care in Miami | Healthy Start Group
+  ogDescription: Experience holistic medical services from Healthy Start Group's specialists, blending innovation with decades of trusted care.
   ogImage: /og.png
-hero:
-  title: Holistic medical services driven by innovation and years of experience.
-  subtitle: We are team of professionals helping others to feel better with our premium services.
-  cta:
-    label: Free consultation
-    to: /contact
+  ogType: website
+  canonical: https://healthystartgroup.com/
+  twitterCard: summary_large_image
+  twitterTitle: Holistic Medical Care in Miami | Healthy Start Group
+  twitterDescription: Experience holistic medical services from Healthy Start Group's specialists, blending innovation with decades of trusted care.
+  twitterImage: /og.png
+  robots: index, follow
+schemaOrg:
+  - "@type": WebPage
+    "@id": "https://healthystartgroup.com/#webpage"
+    url: https://healthystartgroup.com/
+    name: Holistic Medical Care in Miami | Healthy Start Group
+    description: Experience holistic medical services from Healthy Start Group's specialists, blending innovation with decades of trusted care.
+    inLanguage: en
+    isPartOf:
+      "@type": WebSite
+      url: https://healthystartgroup.com/
+      name: Healthy Start Group
+      inLanguage: en
 ---
 
-::landing-hero
+::hero-banner
 ---
-image: /mountains/everest.jpg
+cta:
+  label: Free consultation
+  to: /contact
 ---
 #title
-The Everest.
+Holistic medical services driven by innovation and years of experience.
 
 #description
-The Everest is the highest mountain in the world, standing at 8,848 meters above sea level.
+We are team of professionals helping others to feel better with our premium services.
 ::

@@ -1,61 +1,50 @@
 <script setup>
-const { data: page } = await useContentEntry('page-home', '/')
+const { data: page } = await useContentEntry("page-home", "/");
 const url = useRequestURL();
 
-const seo = computed(() => page.value?.seo)
+const seo = computed(() => page.value?.seo || {});
+const canonicalUrl = computed(() => seo.value?.canonical || url?.href);
+const schemaOrgJson = computed(() =>
+  page.value?.schemaOrg ? JSON.stringify(page.value.schemaOrg) : null,
+);
 
 useSeoMeta({
   title: seo.value?.title,
   description: seo.value?.description,
-
-  ogTitle: seo.value?.title,
-  ogDescription: seo.value?.description,
+  ogTitle: seo.value?.ogTitle || seo.value?.title,
+  ogDescription: seo.value?.ogDescription || seo.value?.description,
   ogImage: seo.value?.ogImage,
-  ogUrl: url?.href,
+  ogUrl: canonicalUrl.value,
+  ogType: seo.value?.ogType || "website",
+  twitterCard: seo.value?.twitterCard || "summary_large_image",
+  twitterTitle: seo.value?.twitterTitle || seo.value?.title,
+  twitterDescription: seo.value?.twitterDescription || seo.value?.description,
+  twitterImage: seo.value?.twitterImage || seo.value?.ogImage,
+  robots: seo.value?.robots || "index, follow",
+  canonical: canonicalUrl.value,
+});
 
-  twitterTitle: seo.value?.title,
-  twitterDescription: seo.value?.description,
-  twitterImage: seo.value?.ogImage,
-})
+useHead(() => {
+  if (!schemaOrgJson.value) {
+    return {};
+  }
 
-const hero = computed(() => page.value?.meta?.hero)
-
+  return {
+    script: [
+      {
+        key: "schema-org-home",
+        type: "application/ld+json",
+        children: schemaOrgJson.value,
+      },
+    ],
+  };
+});
 </script>
 
 <template>
   <div>
     <LangSwitcher />
-    <section class="py-16">
-      <div class="container">
-        <pre>{{ JSON.stringify(page, null, 2) }}</pre>
-      </div>
-    </section>
-
-    <section id="hero" class="h-[75vh] py-16 bg-secondary flex items-center justify-center">
-      <div class="container lg:-mt-[10vh]">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div class="md:col-span-2">
-            <div>
-              <h1
-                class="text-3xl lg:text-5xl xl:text-7xl text-white font-medium leading-tight text-center lg:text-left">
-                {{ hero.title }}
-              </h1>
-            </div>
-          </div>
-          <div class="md:col-span-1 flex items-end">
-            <div>
-              <p class="text-white text-lg lg:text-2xl font-medium mb-10 text-center lg:text-left">
-                {{ hero?.subtitle }}
-              </p>
-
-              <NuxtLink :to="hero?.cta?.to" class="btn primary">
-                {{ hero?.cta?.label }}
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ContentRenderer v-if="page" :value="page" />
 
     <section class="py-10 lg:py-16 bg-secondary-50">
       <div class="container">

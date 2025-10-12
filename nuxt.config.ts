@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      titleTemplate: "%s | Healthy Start Group",
+      titleTemplate: "%s",
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
