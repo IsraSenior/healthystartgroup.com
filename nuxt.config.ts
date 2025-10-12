@@ -28,11 +28,19 @@ export default defineNuxtConfig({
     },
     preview: {
       api: "https://healthystartgroup-com.vercel.app",
-      gitInfo: {
-        name: "healthystartgroup.com",
-        owner: "IsraSenior",
-        url: "https://github.com/IsraSenior/healthystartgroup.com.git",
-      },
+      // api: "https://healthystartgroup-com.vercel.app/__preview.json",
+      // gitInfo: {
+      //   name: "healthystartgroup.com",
+      //   owner: "IsraSenior",
+      //   url: "https://github.com/IsraSenior/healthystartgroup.com.git",
+      // },
+    },
+    // preview: { api: "http://localhost:3000" }
+  },
+
+  nitro: {
+    routeRules: {
+      "/api/_content/**": { cors: true },
     },
   },
 
