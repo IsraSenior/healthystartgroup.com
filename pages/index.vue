@@ -25,11 +25,11 @@ const hero = computed(() => page.value?.meta?.hero)
 <template>
   <div>
     <LangSwitcher />
-    <!-- <section class="py-16">
+    <section class="py-16">
       <div class="container">
         <pre>{{ JSON.stringify(page, null, 2) }}</pre>
       </div>
-    </section> -->
+    </section>
 
     <section id="hero" class="h-[75vh] py-16 bg-secondary flex items-center justify-center">
       <div class="container lg:-mt-[10vh]">
