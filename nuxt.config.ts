@@ -28,20 +28,6 @@ export default defineNuxtConfig({
     },
     preview: {
       api: "https://healthystartgroup-com.vercel.app",
-      // api: "https://healthystartgroup-com.vercel.app/__preview.json",
-      // gitInfo: {
-      //   name: "healthystartgroup.com",
-      //   owner: "IsraSenior",
-      //   url: "https://github.com/IsraSenior/healthystartgroup.com.git",
-      // },
-    },
-    studio: { enabled: true },
-  },
-
-  nitro: {
-    routeRules: {
-      "/api/_content/**": { cors: true },
-      "/socket.io/**": { cors: true }, // opcional; no soluciona la ausencia de WS
     },
   },
 
