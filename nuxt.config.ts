@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 
+const PREVIEW_API =
+  process.env.STUDIO_LOCAL === "1"
+    ? "http://localhost:3000"
+    : "https://healthystartgroup-com.vercel.app";
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
@@ -27,7 +32,7 @@ export default defineNuxtConfig({
       },
     },
     preview: {
-      api: "https://healthystartgroup-com.vercel.app",
+      api: PREVIEW_API,
       // api: "https://healthystartgroup-com.vercel.app/__preview.json",
       // gitInfo: {
       //   name: "healthystartgroup.com",
@@ -35,12 +40,13 @@ export default defineNuxtConfig({
       //   url: "https://github.com/IsraSenior/healthystartgroup.com.git",
       // },
     },
-    // preview: { api: "http://localhost:3000" }
+    studio: { enabled: true },
   },
 
   nitro: {
     routeRules: {
       "/api/_content/**": { cors: true },
+      "/socket.io/**": { cors: true }, // opcional; no soluciona la ausencia de WS
     },
   },
 
