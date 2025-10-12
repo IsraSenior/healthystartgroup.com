@@ -1,11 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 
-const PREVIEW_API =
-  process.env.STUDIO_LOCAL === "1"
-    ? "http://localhost:3000"
-    : "https://healthystartgroup-com.vercel.app";
-
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
@@ -32,7 +27,7 @@ export default defineNuxtConfig({
       },
     },
     preview: {
-      api: PREVIEW_API,
+      api: "https://healthystartgroup-com.vercel.app",
       // api: "https://healthystartgroup-com.vercel.app/__preview.json",
       // gitInfo: {
       //   name: "healthystartgroup.com",
