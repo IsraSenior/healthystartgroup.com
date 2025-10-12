@@ -27,8 +27,13 @@ export default defineNuxtConfig({
       },
     },
     preview: {
-      api: 'https://healthystartgroup-com.vercel.app/'
-    }
+      api: "https://healthystartgroup-com.vercel.app",
+      gitInfo: {
+        name: "healthystartgroup.com",
+        owner: "IsraSenior",
+        url: "https://github.com/IsraSenior/healthystartgroup.com.git",
+      },
+    },
   },
 
   i18n: {
