@@ -1,5 +1,5 @@
 <script setup>
-// const { data: page } = await useContentEntry('section-contact', '/sections/contact')
+const { data: contact } = useI18nResource('sections.contact');
 </script>
 
 <template>
@@ -8,24 +8,24 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="md:col-span-2">
           <h2 class="text-5xl text-white font-medium text-center lg:text-left">
-            Book a free consultation
+            {{ contact?.title }}
           </h2>
         </div>
         <div class="md:col-span-1 flex items-end justify-center lg:justify-end">
           <p
             class="text-lg leading-relaxed text-white font-medium text-center lg:text-right"
           >
-            Fill in the form or choose one of other options.
+            {{ contact?.intro }}
           </p>
         </div>
       </div>
 
-      <div class="mt-16 grid grid-cols-1 md:grid-cols-6 gap-10 lg:gap-32">
-        <div class="md:col-span-3">
-          <FormContact />
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-7 gap-10 lg:gap-32">
+        <div class="md:col-span-4">
+          <FormContact :content="contact?.form" />
         </div>
 
-        <div class="md:col-start-4 md:col-end-6 flex items-center">
+        <div class="md:col-span-3 flex items-center">
           <div
             class="flex flex-col items-center justify-start space-y-10 divide-primary divide-y"
           >
@@ -54,10 +54,14 @@
                   </span>
                 </div>
                 <div class="text-white">
-                  <p class="font-medium text-3xl">Our email</p>
+                  <p class="font-medium text-3xl">
+                    {{ contact?.linksTitle?.mail }}
+                  </p>
                   <p class="text-lg leading-relaxed font-medium">
-                    <a href="mailto:templates@wavesdesign.io"
-                      >templates@wavesdesign.io</a
+                    <a
+                      href="mailto:info@healthystartgroup.com"
+                      class="hover:underline underline-offset-4"
+                      >info@healthystartgroup.com</a
                     >
                   </p>
                 </div>
@@ -87,9 +91,16 @@
                   </span>
                 </div>
                 <div class="text-white">
-                  <p class="font-medium text-3xl">WhatsApp</p>
+                  <p class="font-medium text-3xl">
+                    {{ contact?.linksTitle?.whatsapp }}
+                  </p>
                   <p class="text-lg leading-relaxed font-medium">
-                    <a href="#">+1 600 000 000</a>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=19142141242"
+                      target="_blank"
+                      class="hover:underline underline-offset-4"
+                      >+1 (914) 2141242</a
+                    >
                   </p>
                 </div>
               </li>
@@ -123,29 +134,86 @@
                   </span>
                 </div>
                 <div class="text-white">
-                  <p class="font-medium text-3xl">Find us</p>
+                  <p class="font-medium text-3xl">
+                    {{ contact?.linksTitle?.find }}
+                  </p>
                   <p class="text-lg leading-relaxed font-medium">
-                    <a href="#">Open Google Maps</a>
+                    <a href="https://maps.app.goo.gl/4DPj5EtCu2mWf7VW9" target="_blank" class="hover:underline underline-offset-4">Open Google Maps</a>
                   </p>
                 </div>
               </li>
             </ul>
 
             <div class="text-white w-full pb-10">
-              <p class="font-medium text-3xl mb-5">Visit us</p>
-              <p class="text-lg leading-relaxed font-medium">
-                91020131 <br />
-                Sunset Surf Road <br />
-                San Francisco, CA
+              <p class="font-medium text-3xl mb-5">
+                {{ contact?.linksTitle?.visit }}
               </p>
+              <div class="text-lg leading-relaxed font-medium">
+                <b class="text-white">New York:</b>
+                <ul
+                  class="list-disc list-inside marker:text-primary font-medium"
+                >
+                  <li>731 James St, 2nd Floor, Syracuse, NY 13203</li>
+                  <li>1049 Broadway St, Buffalo, NY 14212</li>
+                  <li>96 Grant St, Buffalo, NY 14213</li>
+                  <li>328 Clinton St, Binghamton, NY 13905</li>
+                </ul>
+                <br />
+                <b class="text-white">Pennsylvania:</b>
+                <ul
+                  class="list-disc list-inside marker:text-primary font-medium"
+                >
+                  <li>
+                    Lower Level Manor Shopping Center, 1250 Millersville Pike,
+                    Lancaster, PA 17603
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div
               id="socials"
               class="flex items-center justify-start gap-5 w-full"
             >
+              <!-- LinkedIn -->
               <a
-                href="#"
+                href="#" target="_blank"
+                class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a
+                href="https://www.facebook.com/healthystartgroup/" target="_blank"
+                class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/healthystartgroup/" target="_blank"
                 class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
                 aria-label="Instagram"
               >
@@ -164,25 +232,9 @@
                   ></path>
                 </svg>
               </a>
+              <!-- Yotube -->
               <a
-                href="#"
-                class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
-                aria-label="Facebook"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                href="#"
+                href="#" target="_blank"
                 class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
                 aria-label="YouTube"
               >
@@ -195,40 +247,6 @@
                 >
                   <path
                     d="M21.593 7.203a2.5 2.5 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.52 2.52 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831M9.996 15.005l.005-6 5.207 3.005z"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
-                aria-label="TikTok"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 3 3 0 0 1 .88.13V9.4a7 7 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a5 5 0 0 1-1-.1z"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
-                aria-label="LinkedIn"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z"
                   ></path>
                 </svg>
               </a>

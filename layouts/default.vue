@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -7,5 +6,9 @@
         <main>
             <slot />
         </main>
+        <div>
+            <SectionContact />
+            <Footer />
+        </div>
     </div>
 </template>
