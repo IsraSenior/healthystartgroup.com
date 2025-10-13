@@ -13,11 +13,51 @@ export default defineContentConfig({
       })
     ),
 
+    services_en: defineCollection(
+      asSeoCollection({
+        type: "page",
+        source: {
+          include: "en/services/**",
+          prefix: "",
+        },
+      })
+    ),
+
+    testimonials_en: defineCollection(
+      asSeoCollection({
+        type: "page",
+        source: {
+          include: "en/testimonials/**",
+          prefix: "",
+        },
+      })
+    ),
+
     content_es: defineCollection(
       asSeoCollection({
         type: "page",
         source: {
           include: "es/**",
+          prefix: "",
+        },
+      })
+    ),
+
+    services_es: defineCollection(
+      asSeoCollection({
+        type: "page",
+        source: {
+          include: "es/services/**",
+          prefix: "",
+        },
+      })
+    ),
+
+    testimonials_es: defineCollection(
+      asSeoCollection({
+        type: "page",
+        source: {
+          include: "es/testimonials/**",
           prefix: "",
         },
       })

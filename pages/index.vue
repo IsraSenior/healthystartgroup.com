@@ -1,95 +1,133 @@
 <script setup>
-const { data: page } = await useContentEntry("page-home", "/");
-const url = useRequestURL();
+const { locale } = useI18n();
 
-const seo = computed(() => page.value?.seo || {});
-const canonicalUrl = computed(() => seo.value?.canonical || url?.href);
-const schemaOrgJson = computed(() =>
-  page.value?.schemaOrg ? JSON.stringify(page.value.schemaOrg) : null,
+const { data: page } = await useContentEntry('page-home', '/');
+const sections = computed(() => page.value?.meta?.sections || {});
+
+const servicesCollection = computed(() => `services_${locale.value}`);
+
+const { data: serviceEntries } = await useAsyncData(
+  'home-services',
+  async () => {
+    let entries = await queryCollection(servicesCollection.value).all();
+
+    if ((!entries || entries.length === 0) && locale.value !== 'en') {
+      entries = await queryCollection('services_en').all();
+    }
+
+    return entries ?? [];
+  },
+  {
+    watch: [servicesCollection],
+  }
 );
 
-useSeoMeta({
-  title: seo.value?.title,
-  description: seo.value?.description,
-  ogTitle: seo.value?.ogTitle || seo.value?.title,
-  ogDescription: seo.value?.ogDescription || seo.value?.description,
-  ogImage: seo.value?.ogImage,
-  ogUrl: canonicalUrl.value,
-  ogType: seo.value?.ogType || "website",
-  twitterCard: seo.value?.twitterCard || "summary_large_image",
-  twitterTitle: seo.value?.twitterTitle || seo.value?.title,
-  twitterDescription: seo.value?.twitterDescription || seo.value?.description,
-  twitterImage: seo.value?.twitterImage || seo.value?.ogImage,
-  robots: seo.value?.robots || "index, follow",
-  canonical: canonicalUrl.value,
-});
-
-useHead(() => {
-  if (!schemaOrgJson.value) {
-    return {};
-  }
-
-  return {
-    script: [
-      {
-        key: "schema-org-home",
-        type: "application/ld+json",
-        children: schemaOrgJson.value,
-      },
-    ],
-  };
-});
+const services = computed(() => serviceEntries.value ?? []);
 </script>
 
 <template>
   <div>
     <LangSwitcher />
-    <ContentRenderer v-if="page" :value="page" />
 
-    <section class="py-10 lg:py-16 bg-secondary-50">
-      <div class="container">
-        <div class="isolate overflow-hidden relative lg:-mt-[20vh]">
-          <img id="portada"
-            v-scroll-property="{ property: 'transform', template: 'scale({value})', from: 1, to: 1.08, transition: 'transform 0.3s ease-out' }"
-            src="https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp"
-            alt="" class="h-full w-full object-center object-cover" />
+    <section
+      v-if="sections?.hero"
+      id="hero"
+      class="h-[75vh] py-16 bg-secondary flex items-center justify-center"
+    >
+      <div class="container lg:-mt-[10vh]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div class="md:col-span-2">
+            <div>
+              <h1
+                class="text-3xl lg:text-5xl xl:text-7xl text-white font-medium leading-tight text-center lg:text-left"
+              >
+                {{ sections?.hero?.title }}
+              </h1>
+            </div>
+          </div>
+          <div class="md:col-span-1 flex items-end">
+            <div>
+              <p
+                class="text-white text-lg lg:text-2xl font-medium mb-10 text-center lg:text-left"
+              >
+                {{ sections?.hero?.description }}
+              </p>
+              <NuxtLink
+                :to="sections?.hero?.cta?.to || '/'"
+                class="btn primary"
+              >
+                {{ sections?.hero?.cta?.label }}
+              </NuxtLink>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <SectionServicesSlider id="home-services" class="pb-10 lg:pb-16 lg:pt-[10vh] bg-secondary-50" />
+    <section v-if="sections?.hero" class="py-10 lg:py-16 bg-secondary-50">
+      <div class="container">
+        <div class="isolate overflow-hidden relative h-[60vh] lg:-mt-[20vh]">
+          <img
+            id="portada"
+            v-scroll-property="{
+              property: 'transform',
+              template: 'scale({value})',
+              from: 1,
+              to: 1.08,
+              transition: 'transform 0.3s ease-out',
+            }"
+            :src="sections?.hero?.image"
+            alt=""
+            class="h-full w-full object-center object-cover"
+          />
+        </div>
+      </div>
+    </section>
 
-    <section class="py-16 lg:py-32 bg-secondary-100">
+    <SectionServicesSlider
+      v-if="sections?.services"
+      id="home-services"
+      class="pb-10 lg:pb-16 lg:pt-0 bg-secondary-50"
+      :title="sections?.services?.title"
+      :services="services"
+    />
+
+    <section v-if="sections?.stats" class="py-16 lg:py-32 bg-secondary-100">
       <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <div class="relative overflow-hidden aspect-square">
-              <img src="https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0ef961f883c7e75994fa_combo.webp"
-                alt="" class="h-full w-full object-cover object-center">
+              <img
+                :src="sections?.stats?.image"
+                :alt="sections?.stats?.title"
+                class="h-full w-full object-cover object-center"
+              />
             </div>
           </div>
 
           <div class="flex items-center justify-center">
             <div class="max-w-lg">
-              <h3 class="text-5xl text-secondary font-medium text-center lg:text-left mb-5">Years of experience and lots
-                of trust</h3>
-              <p class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium">Vivamus quis mi.
-                Phasellus
-                viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu,
-                tincidunt eu, varius ut, felis.</p>
+              <h3
+                class="text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+              >
+                {{ sections?.stats?.title }}
+              </h3>
+              <p
+                class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium"
+              >
+                {{ sections?.stats?.intro }}
+              </p>
 
               <div class="mt-10 grid grid-cols-2 gap-10">
-                <div class="text-center lg:text-left">
-                  <span class="text-primary font-medium text-5xl lg:text-7xl">1000+</span>
+                <div
+                  v-for="(stat, index) in sections?.stats?.stats"
+                  class="text-center lg:text-left"
+                >
+                  <span class="text-primary font-medium text-5xl lg:text-7xl">
+                    {{ stat?.value }}
+                  </span>
                   <p class="text-lg leading-relaxed text-secondary">
-                    clients
-                  </p>
-                </div>
-
-                <div class="text-center lg:text-left">
-                  <span class="text-primary font-medium text-5xl lg:text-7xl">25</span>
-                  <p class="text-lg leading-relaxed text-secondary">
-                    years on the market
+                    {{ stat?.label }}
                   </p>
                 </div>
               </div>
@@ -99,27 +137,33 @@ useHead(() => {
       </div>
     </section>
 
-    <SectionCTA />
+    <SectionCTA v-if="sections?.quote" :data="sections?.quote" />
 
-    <SectionValues />
+    <SectionValues v-if="sections?.values" :data="sections?.values" />
 
-    <SectionTestimonialsSlider class="bg-secondary-50" />
+    <SectionTestimonialsSlider v-if="sections?.testimonials" :data="sections?.testimonials" class="bg-secondary-50" />
 
     <section class="py-16 lg:py-32 bg-secondary-50">
       <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div class="flex items-center justify-center">
             <div class="max-w-lg">
-              <h3 class="text-5xl text-secondary font-medium text-center lg:text-left mb-5">
+              <h3
+                class="text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+              >
                 Years of experience and lots of trust
               </h3>
-              <p class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium">
-                Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed
-                magna purus, fermentum eu, tincidunt eu, varius ut, felis.
+              <p
+                class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium"
+              >
+                Vivamus quis mi. Phasellus viverra nulla ut metus varius
+                laoreet. Nunc interdum lacus sit amet orci. Sed magna purus,
+                fermentum eu, tincidunt eu, varius ut, felis.
               </p>
 
               <ul
-                class="my-10 list-disc list-inside text-lg leading-relaxed text-secondary text-left marker:text-primary">
+                class="my-10 list-disc list-inside text-lg leading-relaxed text-secondary text-left marker:text-primary"
+              >
                 <li>something amazing about Regler</li>
                 <li>we are commited and hard working</li>
                 <li>we have a lot of experience</li>
@@ -135,7 +179,9 @@ useHead(() => {
             <div class="relative overflow-hidden aspect-square">
               <img
                 src="https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649ccd67f17cef2b13d65115_Combo%20Two.webp"
-                alt="" class="h-full w-full object-cover object-center">
+                alt=""
+                class="h-full w-full object-cover object-center"
+              />
             </div>
           </div>
         </div>
@@ -147,7 +193,6 @@ useHead(() => {
         <div class="text-center max-w-2xl mx-auto">
           <h2 class="text-5xl text-secondary font-medium mb-5">
             Our latest articles
-
           </h2>
           <p class="text-lg leading-relaxed text-secondary font-medium">
             Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet.
@@ -164,7 +209,6 @@ useHead(() => {
           <NuxtLink to="/blog" class="btn secondary">See all articles</NuxtLink>
         </div>
       </div>
-
     </section>
 
     <SectionContact />

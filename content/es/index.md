@@ -1,40 +1,48 @@
 ---
-seo:
-  title: Holistic Medical Care en Miami | Healthy Start Group
-  description: Servicios médicos holísticos impulsados por la innovación y años de experiencia.
-  ogTitle: Holistic Medical Care en Miami | Healthy Start Group
-  ogDescription: Servicios médicos holísticos impulsados por la innovación y años de experiencia.
-  ogImage: /og.png
-  ogType: website
-  canonical: https://healthystartgroup.com/
-  twitterCard: summary_large_image
-  twitterTitle: Holistic Medical Care en Miami | Healthy Start Group
-  twitterDescription: Servicios médicos holísticos impulsados por la innovación y años de experiencia.
-  twitterImage: /og.png
-  robots: index, follow
-schemaOrg:
-  - "@type": WebPage
-    "@id": "https://healthystartgroup.com/#webpage"
-    url: https://healthystartgroup.com/
-    name: Holistic Medical Care en Miami | Healthy Start Group
-    description: Servicios médicos holísticos impulsados por la innovación y años de experiencia.
-    inLanguage: es
-    isPartOf:
-      "@type": WebSite
-      url: https://healthystartgroup.com/
-      name: Healthy Start Group
-      inLanguage: es
----
+title: Holistic Medical Care en Miami | Healthy Start Group
+description: Servicios médicos holísticos impulsados por la innovación y años de experiencia.
 
-::hero-banner
+sections:
+  hero:
+    title: Servicios médicos holísticos impulsados por la innovación y años de experiencia.
+    description: Somos un equipo de profesionales que ayudamos a otros a sentirse mejor con nuestros servicios premium.
+    cta:
+      label: Consulta gratis
+      to: /contact
+    image: https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp
+  services:
+    title: Nuestros servicios personalizados
+  stats:
+    title: Años de experiencia y mucha confianza
+    intro: Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.
+    image: https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0ef961f883c7e75994fa_combo.webp
+    stats:
+      - label: cleintes
+        value: 1000+
+      - label: años en el mercado
+        value: 25
+  quote:
+    phrase: At Regler we created the environment where dedication meets with experience and innovation, giving our customers the best possible care es
+    author: Kelly John es
+    author_title: Head Chief Doctor es
+    author_avatar: https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c107dbf28ab02a455276e_SmallPerson.webp
+  values:
+    title: Nuestros valores fundamentales
+    intro: Vestibulum volutpat pretium libero. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Suspendisse nisl
+    cta:
+      label: Sobre nosotros
+      to: /about
+    values:
+      - title: Tu sonrisa es nuestro éxito
+        intro: Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.
+        image: https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e8119dc7e03401459_value%201.webp
+      - title: Comunicación
+        intro: Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.
+        image: https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e3cca037a7a73db21_value%202.webp
+      - title: Profesionalismo
+        intro: Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.
+        image: https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130ee68c4b1212f89840_value%203.webp
+  testimonials:
+    title: Lo que nuestros pa<cientes dicen
+    intro: Vestibulum volutpat >pretium libero. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc.
 ---
-cta:
-  label: Consulta gratis
-  to: /contact
----
-#title
-Servicios médicos holísticos impulsados por la innovación y años de experiencia.
-
-#description
-Somos un equipo de profesionales que ayudamos a otros a sentirse mejor con nuestros servicios premium.
-::
