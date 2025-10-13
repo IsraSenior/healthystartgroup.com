@@ -141,9 +141,13 @@ const services = computed(() => serviceEntries.value ?? []);
 
     <SectionValues v-if="sections?.values" :data="sections?.values" />
 
-    <SectionTestimonialsSlider v-if="sections?.testimonials" :data="sections?.testimonials" class="bg-secondary-50" />
+    <SectionTestimonialsSlider
+      v-if="sections?.testimonials"
+      :data="sections?.testimonials"
+      class="bg-secondary-50"
+    />
 
-    <section class="py-16 lg:py-32 bg-secondary-50">
+    <section v-if="sections?.years" class="py-16 lg:py-32 bg-secondary-50">
       <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div class="flex items-center justify-center">
@@ -151,26 +155,26 @@ const services = computed(() => serviceEntries.value ?? []);
               <h3
                 class="text-5xl text-secondary font-medium text-center lg:text-left mb-5"
               >
-                Years of experience and lots of trust
+                {{ sections?.years?.title }}
               </h3>
               <p
                 class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium"
               >
-                Vivamus quis mi. Phasellus viverra nulla ut metus varius
-                laoreet. Nunc interdum lacus sit amet orci. Sed magna purus,
-                fermentum eu, tincidunt eu, varius ut, felis.
+                {{ sections?.years?.intro }}
               </p>
 
               <ul
                 class="my-10 list-disc list-inside text-lg leading-relaxed text-secondary text-left marker:text-primary"
               >
-                <li>something amazing about Regler</li>
-                <li>we are commited and hard working</li>
-                <li>we have a lot of experience</li>
+                <li v-for="(item, index) in sections?.years?.list" :key="index">
+                  {{ item }}
+                </li>
               </ul>
 
               <div>
-                <NuxtLink to="/about" class="btn secondary">About us</NuxtLink>
+                <NuxtLink :to="sections?.years?.cta.to" class="btn secondary">{{
+                  sections?.years?.cta.label
+                }}</NuxtLink>
               </div>
             </div>
           </div>
@@ -178,8 +182,8 @@ const services = computed(() => serviceEntries.value ?? []);
           <div>
             <div class="relative overflow-hidden aspect-square">
               <img
-                src="https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649ccd67f17cef2b13d65115_Combo%20Two.webp"
-                alt=""
+                :src="sections?.years?.image"
+                :alt="sections?.years?.title"
                 class="h-full w-full object-cover object-center"
               />
             </div>
@@ -188,25 +192,25 @@ const services = computed(() => serviceEntries.value ?? []);
       </div>
     </section>
 
-    <section class="py-16 lg:py-32">
+    <section v-if="sections?.blog" class="py-16 lg:py-32">
       <div class="container">
         <div class="text-center max-w-2xl mx-auto">
           <h2 class="text-5xl text-secondary font-medium mb-5">
-            Our latest articles
+            {{ sections?.blog?.title }}
           </h2>
           <p class="text-lg leading-relaxed text-secondary font-medium">
-            Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet.
+            {{ sections?.blog?.intro }}
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
           <BlogArticle />
-          <BlogArticle />
-          <BlogArticle />
         </div>
 
         <div class="flex items-center justify-center mt-16">
-          <NuxtLink to="/blog" class="btn secondary">See all articles</NuxtLink>
+          <NuxtLink :to="sections?.blog?.cta.to" class="btn secondary">{{
+            sections?.blog?.cta.label
+          }}</NuxtLink>
         </div>
       </div>
     </section>

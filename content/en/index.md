@@ -45,4 +45,21 @@ sections:
   testimonials:
     title: What our patients say
     intro: Vestibulum volutpat pretium libero. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc.
+  years:
+    title: Years of experience and lots of trust
+    intro: Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.
+    image: https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649ccd67f17cef2b13d65115_Combo%20Two.webp
+    list:
+      - something amazing about Regler
+      - we are commited and hard working
+      - we have a lot of experience
+    cta:
+      label: About us
+      to: /about
+  blog:
+    title: Our latest articles
+    intro: Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet.
+    cta:
+      label: See all articles
+      to: /blog
 ---

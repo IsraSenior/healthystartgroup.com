@@ -1,0 +1,59 @@
+---
+title: Precision Cardiology at Home
+description: Track five cardiometabolic signals to personalize recovery and prevent setbacks between clinic visits.
+excerpt: Track five cardiometabolic signals to personalize recovery and prevent setbacks between clinic visits.
+publishedAt: 2024-07-18
+coverImage: https://images.unsplash.com/photo-1587502535605-8f8f15f7b8ec?auto=format&fit=crop&w=1600&q=80
+category: Cardiology
+tags:
+  - cardiac-care
+  - remote-monitoring
+  - prevention
+readingTime: 7 min
+author:
+  name: Dr. Alicia Warren
+  role: Cardiologist, Healthy Start Group
+  avatar: https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80
+---
+
+# Precision Cardiology at Home
+
+Our cardiology team pairs clinic diagnostics with a structured home plan so patients notice meaningful changes between appointments. These five data points are simple to capture, yet powerful enough to inform each check-in.
+
+## 1. Morning blood pressure trends
+
+Start each day with two back-to-back readings while seated. Comparing weekly averages helps the care team decide whether to adjust medication or lifestyle goals.
+
+### Action steps
+
+- Keep a shared log in the Healthy Start portal.
+- Record unusual events such as poor sleep or increased sodium intake.
+- Contact your nurse if systolic pressure jumps more than 20 points on two consecutive mornings.
+
+## 2. Heart rate recovery window
+
+After a light exercise session, note the time needed for your pulse to drop back to baseline. Faster recovery usually signals improved autonomic balance.
+
+> Tip: pair the measurement with guided breathing to reinforce parasympathetic tone.
+
+## 3. Continuous glucose snapshots
+
+Intermittent CGM patches offer insight into how stress, sleep, and hydration influence cardiac load. Even if you are not living with diabetes, the pattern can reveal hidden triggers that elevate inflammation.
+
+## 4. Sleep quality score
+
+Combine wearable data with a subjective one-to-five rating describing how rested you feel. When scores slip, our team reviews nighttime routines to restore cardiovascular recovery.
+
+## 5. Daily energy check-in
+
+A short, three-question survey inside the Healthy Start app captures fatigue, mood, and focus. The responses help us time lab work or imaging before significant setbacks appear.
+
+---
+
+## Putting the data to work
+
+1. Upload your readings before your monthly telemedicine brief.
+2. Discuss any trend shifts with your cardiac navigator.
+3. Adjust activity, nutrition, or medication as needed.
+
+Remember, the goal is not perfection but insight. When patients and clinicians share the same dashboard, treatment plans evolve faster and outcomes stay on track.

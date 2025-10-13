@@ -31,7 +31,7 @@ defineProps({
             {{ testimonial?.quote }}
           </q>
           <p class="text-lg leading-relaxed text-secondary mt-5">
-            {{ testimonial?.name }} 
+            {{ testimonial?.name }}
             <span v-if="testimonial?.role"><br />{{ testimonial?.role }}</span>
           </p>
         </div>

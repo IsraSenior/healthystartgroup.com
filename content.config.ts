@@ -33,6 +33,16 @@ export default defineContentConfig({
       })
     ),
 
+    articles_en: defineCollection(
+      asSeoCollection({
+        type: "page",
+        source: {
+          include: "en/articles/**",
+          prefix: "",
+        },
+      })
+    ),
+
     content_es: defineCollection(
       asSeoCollection({
         type: "page",
@@ -58,6 +68,16 @@ export default defineContentConfig({
         type: "page",
         source: {
           include: "es/testimonials/**",
+          prefix: "",
+        },
+      })
+    ),
+
+    articles_es: defineCollection(
+      asSeoCollection({
+        type: "page",
+        source: {
+          include: "es/articles/**",
           prefix: "",
         },
       })
