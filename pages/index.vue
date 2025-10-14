@@ -25,7 +25,7 @@ useSeoMeta(page?.value?.seo);
           <div class="md:col-span-2">
             <div>
               <h1
-                class="text-3xl lg:text-5xl xl:text-7xl text-white font-medium leading-tight text-center lg:text-left"
+                class="text-3xl lg:text-5xl xl:text-7xl text-white font-normal leading-tight text-center lg:text-left"
               >
                 {{ page?.hero?.title }}
               </h1>
@@ -34,7 +34,7 @@ useSeoMeta(page?.value?.seo);
           <div class="md:col-span-1 flex items-end">
             <div>
               <p
-                class="text-white text-lg lg:text-2xl font-medium mb-10 text-center lg:text-left"
+                class="text-white text-lg lg:text-2xl font-normal mb-10 text-center lg:text-left"
               >
                 {{ page?.hero?.description }}
               </p>
@@ -92,12 +92,12 @@ useSeoMeta(page?.value?.seo);
           <div class="flex items-center justify-center">
             <div class="max-w-lg">
               <h3
-                class="text-3xl md:text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+                class="text-3xl md:text-5xl text-secondary font-normal text-center lg:text-left mb-5"
               >
                 {{ page?.stats?.title }}
               </h3>
               <div
-                class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium"
+                class="text-lg leading-relaxed text-secondary text-center lg:text-left font-normal"
                 v-html="page?.stats?.intro"
               >
               </div>
@@ -108,7 +108,7 @@ useSeoMeta(page?.value?.seo);
                   :key="index"
                   class="text-center lg:text-left"
                 >
-                  <span class="text-primary font-medium  text-3xl lg:text-5xl">
+                  <span class="text-primary font-normal  text-3xl lg:text-5xl">
                     {{ stat?.value }}
                   </span>
                   <p class="text-base leading-relaxed text-secondary">
@@ -138,12 +138,12 @@ useSeoMeta(page?.value?.seo);
           <div class="flex items-center justify-center">
             <div class="max-w-lg">
               <h3
-                class="text-3xl md:text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+                class="text-3xl md:text-5xl text-secondary font-normal text-center lg:text-left mb-5"
               >
                 {{ page?.years?.title }}
               </h3>
               <p
-                class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium"
+                class="text-lg leading-relaxed text-secondary text-center lg:text-left font-normal"
               >
                 {{ page?.years?.intro }}
               </p>
@@ -180,10 +180,10 @@ useSeoMeta(page?.value?.seo);
     <section v-if="page?.blog" class="py-16 lg:py-32">
       <div class="container">
         <div class="text-center max-w-2xl mx-auto">
-          <h2 class="text-5xl text-secondary font-medium mb-5">
+          <h2 class="text-5xl text-secondary font-normal mb-5">
             {{ page?.blog?.title }}
           </h2>
-          <p class="text-lg leading-relaxed text-secondary font-medium">
+          <p class="text-lg leading-relaxed text-secondary font-normal">
             {{ page?.blog?.intro }}
           </p>
         </div>

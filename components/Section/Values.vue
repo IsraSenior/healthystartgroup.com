@@ -14,11 +14,11 @@ defineProps({
         <div>
           <div class="max-w-lg sticky top-32">
             <h2
-              class="text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+              class="text-5xl text-secondary font-normal text-center lg:text-left mb-5"
             >
               {{ data?.title }}
             </h2>
-            <p class="text-lg leading-relaxed text-secondary mb-10 font-medium">
+            <p class="text-lg leading-relaxed text-secondary mb-10 font-normal">
               {{ data?.intro }}
             </p>
 
@@ -47,7 +47,7 @@ defineProps({
               <div
                 class="text-center text-white absolute inset-x-5 lg:inset-x-10 bottom-5 lg:bottom-10"
               >
-                <h5 class="text-xl lg:text-4xl font-medium mb-5">
+                <h5 class="text-xl lg:text-4xl font-normal mb-5">
                   {{ value?.title }}
                 </h5>
                 <p class="text-lg leading-relaxed">

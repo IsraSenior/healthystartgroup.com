@@ -7,13 +7,13 @@ const { data: contact } = useI18nResource('sections.contact');
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="md:col-span-2">
-          <h2 class="text-5xl text-white font-medium text-center lg:text-left">
+          <h2 class="text-5xl text-white font-normal text-center lg:text-left">
             {{ contact?.title }}
           </h2>
         </div>
         <div class="md:col-span-1 flex items-end justify-center lg:justify-end">
           <p
-            class="text-lg leading-relaxed text-white font-medium text-center lg:text-right"
+            class="text-lg leading-relaxed text-white font-normal text-center lg:text-right"
           >
             {{ contact?.intro }}
           </p>
@@ -54,10 +54,10 @@ const { data: contact } = useI18nResource('sections.contact');
                   </span>
                 </div>
                 <div class="text-white">
-                  <p class="font-medium text-3xl">
+                  <p class="font-normal text-3xl">
                     {{ contact?.linksTitle?.mail }}
                   </p>
-                  <p class="text-lg leading-relaxed font-medium">
+                  <p class="text-lg leading-relaxed font-normal">
                     <a
                       href="mailto:info@healthystartgroup.com"
                       class="hover:underline underline-offset-4"
@@ -91,10 +91,10 @@ const { data: contact } = useI18nResource('sections.contact');
                   </span>
                 </div>
                 <div class="text-white">
-                  <p class="font-medium text-3xl">
+                  <p class="font-normal text-3xl">
                     {{ contact?.linksTitle?.whatsapp }}
                   </p>
-                  <p class="text-lg leading-relaxed font-medium">
+                  <p class="text-lg leading-relaxed font-normal">
                     <a
                       href="https://api.whatsapp.com/send?phone=19142141242"
                       target="_blank"
@@ -134,10 +134,10 @@ const { data: contact } = useI18nResource('sections.contact');
                   </span>
                 </div>
                 <div class="text-white">
-                  <p class="font-medium text-3xl">
+                  <p class="font-normal text-3xl">
                     {{ contact?.linksTitle?.find }}
                   </p>
-                  <p class="text-lg leading-relaxed font-medium">
+                  <p class="text-lg leading-relaxed font-normal">
                     <a href="https://maps.app.goo.gl/4DPj5EtCu2mWf7VW9" target="_blank" class="hover:underline underline-offset-4">Open Google Maps</a>
                   </p>
                 </div>
@@ -145,13 +145,13 @@ const { data: contact } = useI18nResource('sections.contact');
             </ul>
 
             <div class="text-white w-full pb-10">
-              <p class="font-medium text-3xl mb-5">
+              <p class="font-normal text-3xl mb-5">
                 {{ contact?.linksTitle?.visit }}
               </p>
-              <div class="text-lg leading-relaxed font-medium">
+              <div class="text-lg leading-relaxed font-normal">
                 <b class="text-white">New York:</b>
                 <ul
-                  class="list-disc list-inside marker:text-primary font-medium"
+                  class="list-disc list-inside marker:text-primary font-normal"
                 >
                   <li>731 James St, 2nd Floor, Syracuse, NY 13203</li>
                   <li>1049 Broadway St, Buffalo, NY 14212</li>
@@ -161,7 +161,7 @@ const { data: contact } = useI18nResource('sections.contact');
                 <br />
                 <b class="text-white">Pennsylvania:</b>
                 <ul
-                  class="list-disc list-inside marker:text-primary font-medium"
+                  class="list-disc list-inside marker:text-primary font-normal"
                 >
                   <li>
                     Lower Level Manor Shopping Center, 1250 Millersville Pike,

@@ -334,13 +334,13 @@ onBeforeUnmount(() => {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="md:col-span-2">
           <h2
-            class="text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+            class="text-5xl text-secondary font-normal text-center lg:text-left mb-5"
           >
             {{ props.title }}
           </h2>
           <p
             v-if="props?.intro"
-            class="text-lg leading-relaxed text-secondary font-medium text-center lg:text-left"
+            class="text-lg leading-relaxed text-secondary font-normal text-center lg:text-left"
           >
             {{ props?.intro }}
           </p>

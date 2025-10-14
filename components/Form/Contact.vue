@@ -14,7 +14,7 @@ const fields = computed(() => props.content?.fields ?? {});
     <div>
       <label
         for="name"
-        class="block text-lg font-medium text-secondary uppercase"
+        class="block text-lg font-normal text-secondary uppercase"
       >
         {{ fields?.name?.label }}
       </label>
@@ -23,7 +23,7 @@ const fields = computed(() => props.content?.fields ?? {});
           type="text"
           name="name"
           id="name"
-          class="block w-full rounded-full bg-transparent px-5 py-2.5 text-base text-secondary ring-2 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
+          class="block w-full rounded-full bg-transparent px-5 py-2.5 text-base text-secondary ring-1 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
           :placeholder="fields?.name?.placeholder"
         />
       </div>
@@ -32,7 +32,7 @@ const fields = computed(() => props.content?.fields ?? {});
     <div>
       <label
         for="phone"
-        class="block text-lg font-medium text-secondary uppercase"
+        class="block text-lg font-normal text-secondary uppercase"
       >
         {{ fields?.phone?.label }}
       </label>
@@ -41,7 +41,7 @@ const fields = computed(() => props.content?.fields ?? {});
           type="tel"
           name="phone"
           id="phone"
-          class="block w-full rounded-full bg-transparent px-5 py-2.5 text-base text-secondary ring-2 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
+          class="block w-full rounded-full bg-transparent px-5 py-2.5 text-base text-secondary ring-1 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
           :placeholder="fields?.phone?.placeholder"
         />
       </div>
@@ -50,7 +50,7 @@ const fields = computed(() => props.content?.fields ?? {});
     <div>
       <label
         for="email"
-        class="block text-lg font-medium text-secondary uppercase"
+        class="block text-lg font-normal text-secondary uppercase"
       >
         {{ fields?.email?.label }}
       </label>
@@ -59,7 +59,7 @@ const fields = computed(() => props.content?.fields ?? {});
           type="email"
           name="email"
           id="email"
-          class="block w-full rounded-full bg-transparent px-5 py-2.5 text-base text-secondary ring-2 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
+          class="block w-full rounded-full bg-transparent px-5 py-2.5 text-base text-secondary ring-1 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
           :placeholder="fields?.email?.placeholder"
           
         />
@@ -69,7 +69,7 @@ const fields = computed(() => props.content?.fields ?? {});
     <div>
       <label
         for="message"
-        class="block text-lg font-medium text-secondary uppercase"
+        class="block text-lg font-normal text-secondary uppercase"
       >
         {{ fields?.message?.label }}
       </label>
@@ -77,7 +77,7 @@ const fields = computed(() => props.content?.fields ?? {});
         <textarea
           name="message"
           id="message"
-          class="block w-full rounded-xl h-32 bg-transparent px-5 py-2.5 text-base text-secondary ring-2 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
+          class="block w-full rounded-xl h-32 bg-transparent px-5 py-2.5 text-base text-secondary ring-1 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
           :placeholder="fields?.message?.placeholder"
         />
       </div>

@@ -38,7 +38,7 @@ defineProps({
       </slot>
 
       <h3
-        class="mt-6 text-4xl font-medium leading-tight text-center lg:text-left line-clamp-3"
+        class="mt-6 text-4xl font-normal leading-tight text-center lg:text-left line-clamp-3"
       >
         {{ service?.title }}
       </h3>

@@ -12,7 +12,7 @@ defineProps({
     <div class="max-w-5xl mx-auto px-5 lg:px-0 text-center lg:text-left">
       <q
         v-if="data?.phrase"
-        class="text-white text-3xl lg:text-6xl leading-tight font-medium"
+        class="text-white text-3xl lg:text-6xl leading-tight font-normal"
       >
         {{ data?.phrase }}
       </q>

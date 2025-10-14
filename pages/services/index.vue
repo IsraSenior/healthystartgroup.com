@@ -11,12 +11,12 @@
         <section class="py-16 lg:py-32">
             <div class="container">
                 <div class="text-center max-w-2xl mx-auto">
-                    <h2 v-if="page?.title" class="text-5xl text-secondary font-medium mb-5">
+                    <h2 v-if="page?.title" class="text-5xl text-secondary font-normal mb-5">
                     {{ page?.title }}
                     </h2>
                     <p
                     v-if="page?.intro"
-                    class="text-lg leading-relaxed text-secondary font-medium"
+                    class="text-lg leading-relaxed text-secondary font-normal"
                     >
                     {{ page?.intro }}
                     </p>
@@ -30,7 +30,7 @@
 
                 <div class="pt-16 md:flex flex-col md:flex-row items-center justify-between gap-10 hidden">
                     <div>
-                        <h3 class="text-5xl text-secondary font-medium">{{ page?.cta?.title }}</h3>
+                        <h3 class="text-5xl text-secondary font-normal">{{ page?.cta?.title }}</h3>
                     </div>
 
                     <div class="w-full md:w-auto">

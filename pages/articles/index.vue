@@ -11,12 +11,12 @@
         <section class="py-16 lg:py-32">
             <div class="container">
                 <div class="text-center max-w-2xl mx-auto">
-                    <h2 v-if="page?.title" class="text-5xl text-secondary font-medium mb-5">
+                    <h2 v-if="page?.title" class="text-5xl text-secondary font-normal mb-5">
                     {{ page?.title }}
                     </h2>
                     <p
                     v-if="page?.intro"
-                    class="text-lg leading-relaxed text-secondary font-medium"
+                    class="text-lg leading-relaxed text-secondary font-normal"
                     >
                     {{ page?.intro }}
                     </p>

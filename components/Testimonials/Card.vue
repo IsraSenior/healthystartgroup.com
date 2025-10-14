@@ -27,7 +27,7 @@ defineProps({
 
       <div class="flex items-center justify-center md:col-span-2">
         <div class="max-w-xl text-center lg:text-left">
-          <q class="mt-6 text-2xl font-medium leading-tight">
+          <q class="mt-6 text-2xl font-normal leading-tight">
             {{ testimonial?.quote }}
           </q>
           <p class="text-lg leading-relaxed text-secondary mt-5">

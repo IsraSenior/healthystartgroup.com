@@ -8,12 +8,12 @@
             <section class="py-16 lg:py-32">
                 <div class="container">
                     <div class="text-center max-w-2xl mx-auto">
-                        <h2 v-if="page?.title" class="text-5xl text-secondary font-medium mb-5">
+                        <h2 v-if="page?.title" class="text-5xl text-secondary font-normal mb-5">
                         {{ page?.title }}
                         </h2>
                         <p
                         v-if="page?.intro"
-                        class="text-lg leading-relaxed text-secondary font-medium"
+                        class="text-lg leading-relaxed text-secondary font-normal"
                         >
                         {{ page?.intro }}
                         </p>
@@ -35,7 +35,7 @@
                             :key="index"
                             class="text-center lg:text-left lg:px-10"
                         >
-                            <span class="text-primary font-medium  text-3xl lg:text-5xl">
+                            <span class="text-primary font-normal  text-3xl lg:text-5xl">
                                 {{ stat?.value }}
                             </span>
                             <p class="text-base leading-relaxed text-secondary">
@@ -72,12 +72,12 @@
                     <div class="flex items-center justify-center">
                         <div class="max-w-lg">
                         <h3
-                            class="text-3xl md:text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+                            class="text-3xl md:text-5xl text-secondary font-normal text-center lg:text-left mb-5"
                         >
                             {{ page?.exp?.title }}
                         </h3>
                         <p
-                            class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium"
+                            class="text-lg leading-relaxed text-secondary text-center lg:text-left font-normal"
                         >
                             {{ page?.exp?.intro }}
                         </p>

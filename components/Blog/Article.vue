@@ -28,7 +28,7 @@ defineProps({
         >{{ article?.meta?.publishedAt }}</time
       >
 
-      <h6 class="my-5 text-2xl font-medium leading-tight">
+      <h6 class="my-5 text-2xl font-normal leading-tight">
         {{ article?.title }}
       </h6>
 

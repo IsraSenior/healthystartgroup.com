@@ -54,13 +54,13 @@
 
   .nav-header {
     & > a {
-      @apply text-white hover:text-primary font-medium text-lg;
+      @apply text-white hover:text-primary font-normal text-lg;
     }
   }
 
   .nav-header-mobile {
     & > a {
-      @apply text-white hover:text-primary font-medium text-lg px-5 py-1.5 w-full text-center;
+      @apply text-white hover:text-primary font-normal text-lg px-5 py-1.5 w-full text-center;
     }
   }
 }

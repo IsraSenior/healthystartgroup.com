@@ -27,7 +27,7 @@ const offcanvasStatus = ref(false)
             <div class="flex items-center justify-between">
                 <div>
                     <NuxtLink to="/">
-                        <Logo class="h-8 md:h-12" primary="text-primary" secondary="text-white" />
+                        <Logo class="h-12 md:h-14" primary="text-primary" secondary="text-white" />
                     </NuxtLink>
                 </div>
                 <div class="flex items-center justify-end space-x-10">
