@@ -31,7 +31,7 @@ const offcanvasStatus = ref(false)
                     </NuxtLink>
                 </div>
                 <div class="flex items-center justify-end space-x-10">
-                    <nav class="items-center justify-center space-x-5 nav-header hidden lg:flex">
+                    <nav class="items-center justify-center space-x-10 nav-header hidden lg:flex">
                         <NuxtLink v-for="(item, index) in header.menu" :key="index" :to="item.to">{{ item.label }}</NuxtLink>
                     </nav>
                     
