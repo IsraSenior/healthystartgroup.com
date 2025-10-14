@@ -1,4 +1,66 @@
 export default {
+  sections: {
+    contact: {
+      title: 'Agenda una consulta gratuita',
+      intro: 'Completa el formulario o utiliza cualquiera de las opciones alternativas.',
+      linksTitle: {
+        mail: 'Nuestro correo',
+        whatsapp: 'WhatsApp / Teléfono',
+        find: 'Encuéntranos',
+        visit: 'Visítanos',
+      },
+
+      form: {
+        fields: {
+          name: {
+            label: 'Nombre completo',
+            placeholder: 'ej.: Ana Gómez',
+          },
+          phone: {
+            label: 'Teléfono',
+            placeholder: 'ej.: +1 (914) 2141242',
+          },
+          email: {
+            label: 'Correo electrónico',
+            placeholder: 'e.g., ana.gomezemail.com',
+          },
+          message: {
+            label: '¿Cómo podemos ayudarte?',
+            placeholder: 'ej.: Necesito soporte para implementar un Contact Center médico...',
+          },
+        },
+        submitBtn: 'Enviar',
+      },
+    },
+    header: {
+      menu: [
+        {
+          label: 'Sobre nosotros',
+          to: '/about',
+        },
+        {
+          label: 'Servicios',
+          to: '/services',
+        },
+        {
+          label: 'Blog',
+          to: '/articles',
+        },
+        {
+          label: 'Contáctanos',
+          to: '/contact',
+        },
+      ],
+      cta: {
+        label: 'Solicita una consulta',
+        to: '/contact',
+      },
+    },
+    footer: {
+      rights: "Todos los derechos reservados",
+      developed: "Desarrolado por"
+    }
+  },
   home: {
     seo: {
       title:
@@ -116,66 +178,18 @@ export default {
       },
     },
   },
-  sections: {
-    contact: {
-      title: 'Agenda una consulta gratuita',
-      intro: 'Completa el formulario o utiliza cualquiera de las opciones alternativas.',
-      linksTitle: {
-        mail: 'Nuestro correo',
-        whatsapp: 'WhatsApp / Teléfono',
-        find: 'Encuéntranos',
-        visit: 'Visítanos',
-      },
-
-      form: {
-        fields: {
-          name: {
-            label: 'Nombre completo',
-            placeholder: 'ej.: Ana Gómez',
-          },
-          phone: {
-            label: 'Teléfono',
-            placeholder: 'ej.: +1 (914) 2141242',
-          },
-          email: {
-            label: 'Correo electrónico',
-            placeholder: 'e.g., ana.gomezemail.com',
-          },
-          message: {
-            label: '¿Cómo podemos ayudarte?',
-            placeholder: 'ej.: Necesito soporte para implementar un Contact Center médico...',
-          },
-        },
-        submitBtn: 'Enviar',
-      },
-    },
-    header: {
-      menu: [
-        {
-          label: 'Sobre nosotros',
-          to: '/about',
-        },
-        {
-          label: 'Servicios',
-          to: '/services',
-        },
-        {
-          label: 'Blog',
-          to: '/articles',
-        },
-        {
-          label: 'Contáctanos',
-          to: '/contact',
-        },
-      ],
-      cta: {
-        label: 'Solicita una consulta',
-        to: '/contact',
-      },
-    },
-    footer: {
-      rights: "Todos los derechos reservados",
-      developed: "Desarrolado por"
+  services: {
+    title: 'Áreas de Especialización',
+    intro: 'Servicios corporativos para proveedores de salud, aseguradoras y redes médicas.',
+    cta: {
+      title: '¿Hablamos?',
+      label: 'Solicita una consulta',
+      to: '/contact',
+      image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cefe7659ee768d73e0492_Big%20Image%20Two.webp'
     }
   },
+  articles: {
+    title: 'Nos encanta compartir conocimientos',
+    intro: 'Vida saludable, dietas e innovaciones médicas',
+  }
 };

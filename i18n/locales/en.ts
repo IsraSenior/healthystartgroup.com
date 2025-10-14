@@ -1,4 +1,66 @@
 export default {
+  sections: {
+    contact: {
+      title: 'Book a free consultation',
+      intro: 'Fill in the form or choose one of other options.',
+      linksTitle: {
+        mail: 'Our email',
+        whatsapp: 'WhatsApp',
+        find: 'Find us',
+        visit: 'Visit us',
+      },
+
+      form: {
+        fields: {
+          name: {
+            label: 'Full name',
+            placeholder: 'e.g., Ana Gómez',
+          },
+          phone: {
+            label: 'Phone',
+            placeholder: 'e.g, +1 (914) 2141242',
+          },
+          email: {
+            label: 'Email',
+            placeholder: 'e.g., ana.gomezemail.com',
+          },
+          message: {
+            label: 'How can we help you?',
+            placeholder: 'e.g., I am looking for healthcare outsourcing support...',
+          },
+        },
+        submitBtn: 'Submit',
+      },
+    },
+    header: {
+      menu: [
+        {
+          label: 'About us',
+          to: '/about',
+        },
+        {
+          label: 'Services',
+          to: '/services',
+        },
+        {
+          label: 'Blog',
+          to: '/articles',
+        },
+        {
+          label: 'Contact us',
+          to: '/contact',
+        },
+      ],
+      cta: {
+        label: 'Request a consultation',
+        to: '/contact',
+      },
+    },
+    footer: {
+      rights: 'All rights reserved',
+      developed: 'Developed by',
+    },
+  },
   home: {
     seo: {
       title: 'Global healthcare management and enterprise medical development solutions.',
@@ -111,66 +173,18 @@ export default {
       },
     },
   },
-  sections: {
-    contact: {
-      title: 'Book a free consultation',
-      intro: 'Fill in the form or choose one of other options.',
-      linksTitle: {
-        mail: 'Our email',
-        whatsapp: 'WhatsApp',
-        find: 'Find us',
-        visit: 'Visit us',
-      },
-
-      form: {
-        fields: {
-          name: {
-            label: 'Full name',
-            placeholder: 'e.g., Ana Gómez',
-          },
-          phone: {
-            label: 'Phone',
-            placeholder: 'e.g, +1 (914) 2141242',
-          },
-          email: {
-            label: 'Email',
-            placeholder: 'e.g., ana.gomezemail.com',
-          },
-          message: {
-            label: 'How can we help you?',
-            placeholder: 'e.g., I am looking for healthcare outsourcing support...',
-          },
-        },
-        submitBtn: 'Submit',
-      },
-    },
-    header: {
-      menu: [
-        {
-          label: 'About us',
-          to: '/about',
-        },
-        {
-          label: 'Services',
-          to: '/services',
-        },
-        {
-          label: 'Blog',
-          to: '/articles',
-        },
-        {
-          label: 'Contact us',
-          to: '/contact',
-        },
-      ],
-      cta: {
-        label: 'Request a consultation',
-        to: '/contact',
-      },
-    },
-    footer: {
-      rights: 'All rights reserved',
-      developed: 'Developed by',
-    },
+  services: {
+    title: 'Our Specialized Areas',
+    intro: 'Corporate healthcare services for providers, insurers, and medical networks.',
+    cta: {
+      title: 'Let’s Talk',
+      label: 'Request a consultation',
+      to: '/contact',
+      image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cefe7659ee768d73e0492_Big%20Image%20Two.webp'
+    }
   },
+  articles: {
+    title: 'We love sharing knowledge',
+    intro: 'Healthy living, diets and medical innovations',
+  }
 };
