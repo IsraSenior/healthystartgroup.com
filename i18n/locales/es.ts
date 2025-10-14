@@ -149,7 +149,30 @@ export default {
         submitBtn: 'Enviar',
       },
     },
-
+    header: {
+      menu: [
+        {
+          label: 'Sobre nosotros',
+          to: '/about',
+        },
+        {
+          label: 'Servicios',
+          to: '/services',
+        },
+        {
+          label: 'Blog',
+          to: '/articles',
+        },
+        {
+          label: 'Contáctanos',
+          to: '/contact',
+        },
+      ],
+      cta: {
+        label: 'Solicita una consulta',
+        to: '/contact',
+      },
+    },
     footer: {
       rights: "Todos los derechos reservados",
       developed: "Desarrolado por"
