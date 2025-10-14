@@ -40,6 +40,7 @@
             </div>
 
         </section>
+
         <div class="isolate overflow-hidden relative h-[100vh] hidden md:block">
             <img
                 id="portada"
