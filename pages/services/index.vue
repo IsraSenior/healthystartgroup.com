@@ -28,19 +28,19 @@
 
                 <hr class="text-primary">
 
-                <div class="pt-16 flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="pt-16 md:flex flex-col md:flex-row items-center justify-between gap-10 hidden">
                     <div>
                         <h3 class="text-5xl text-secondary font-medium">{{ page?.cta?.title }}</h3>
                     </div>
 
-                    <div>
+                    <div class="w-full md:w-auto">
                         <NuxtLink :to="page?.cta?.to" class="btn secondary">{{ page?.cta?.label }}</NuxtLink>
                     </div>
                 </div>
             </div>
 
         </section>
-        <div class="isolate overflow-hidden relative h-[100vh]">
+        <div class="isolate overflow-hidden relative h-[100vh] hidden md:block">
             <img
                 id="portada"
                 v-scroll-property="{
