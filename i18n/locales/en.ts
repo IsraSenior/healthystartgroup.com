@@ -2,111 +2,124 @@ export default {
   home: {
     seo: {
       title:
-        'Holistic medical services driven by innovation and years of experience.',
+        'Global healthcare management and enterprise medical development solutions.',
       description:
-        'We are team of professionals helping others to feel better with our premium services.',
+        'HealthyStart Group is a global service company specializing in optimizing medical operations, patient management, and business expansion strategies across the healthcare sector.',
       ogImage: '/og.png',
       twitterTitle:
-        'Holistic medical services driven by innovation and years of experience.',
+        'Global healthcare management and enterprise medical development solutions.',
       twitterDescription:
-        'We are team of professionals helping others to feel better with our premium services.',
+        'HealthyStart Group is a global service company specializing in optimizing medical operations, patient management, and business expansion strategies across the healthcare sector.',
       twitterImage: '/og.png',
     },
     hero: {
       title:
-        'Holistic medical services driven by innovation and years of experience.',
+        'Global healthcare management and enterprise medical development solutions.',
       description:
-        'We are team of professionals helping others to feel better with our premium services.',
+        'HealthyStart Group is a global service company specializing in optimizing medical operations, patient management, and business expansion strategies across the healthcare sector.',
       cta: {
-        label: 'Free consultation',
+        label: 'Book a meeting',
         to: '/contact',
       },
       image:
         'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp',
     },
     services: {
-      title: 'Our custom services',
+      title: 'Our core services',
+      intro:
+        'Integrated solutions combining healthcare operations, technology, and strategic management.',
     },
     stats: {
-      title: 'Years of experience and lots of trust',
+      title: 'A company with global vision and proven healthcare expertise.',
       intro:
-        'Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.',
+        'HealthyStart Group strengthens the healthcare ecosystem through integrated, results-oriented solutions. Our structure combines medical knowledge, operational management, and applied technology—helping clinics, insurers, and healthcare institutions enhance their efficiency and service quality. <br><br> With a presence in the U.S., Dominican Republic, and Latin America, our multidisciplinary teams bring together medical professionals, engineers, and data analysts to deliver measurable, sustainable strategies.',
       image:
         'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0ef961f883c7e75994fa_combo.webp',
       stats: [
         {
-          label: 'clients',
-          value: '1000+',
+          label: 'patients managed annually',
+          value: '30k +',
         },
         {
-          label: 'years on the market',
-          value: 25,
+          label: 'Strategic regions with active operations',
+          value: '5',
+        },
+        {
+          label: 'years of experience in healthcare and BPO management',
+          value: '10+',
         },
       ],
     },
     quote: {
       phrase:
-        'At Regler we created the environment where dedication meets with experience and innovation, giving our customers the best possible care',
-      author: 'Kelly John',
-      author_title: 'Head Chief Doctor',
-      author_avatar:
-        'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c107dbf28ab02a455276e_SmallPerson.webp',
+        'At HealthyStart Group, we transform healthcare management through innovation, efficiency, and a human approach that connects outcomes with well-being.',
+      author: 'Executive Board',
+      author_title: 'HealthyStart Group',
+      author_avatar: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c107dbf28ab02a455276e_SmallPerson.webp',
     },
     values: {
       title: 'Our core values',
-      intro:
-        'Vestibulum volutpat pretium libero. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Suspendisse nisl',
+      intro: 'Ethical leadership, continuous innovation, and operational excellence define our work.',
       cta: {
         label: 'About',
         to: '/about',
       },
       values: [
         {
-          title: 'Your smile is our success',
+          title: 'Commitment to quality',
           intro:
-            'Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.',
+            'Every project follows international standards for healthcare and operations.',
           image:
             'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e8119dc7e03401459_value%201.webp',
         },
         {
-          title: 'Communication',
-          intro:
-            'Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.',
+          title: 'Operational efficiency',
+          intro: 'We optimize resources, processes, and data to improve results.',
           image:
             'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e3cca037a7a73db21_value%202.webp',
         },
         {
-          title: 'Professionalism',
-          intro:
-            'Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.',
+          title: 'Transparency & compliance',
+          intro: 'Integrity and regulatory compliance are central to our partnerships.',
           image:
             'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130ee68c4b1212f89840_value%203.webp',
+        },
+        {
+          title: 'Applied innovation',
+          intro: 'We develop adaptive solutions anticipating healthcare trends.',
+          image:
+            'https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/8d/3d/31/ef/ea/v1_E10/E1057WLP.jpg?w=800&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=1769db2c1094f25f6e22578fe52cf1a0e24c46d0e123aba4bdec391fa91d510f',
+        },
+        {
+          title: 'Human development',
+          intro: 'Empowering our people and partners through growth and education.',
+          image:
+            'https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/5d/37/11/21/77/v1_E11/E11HSXH.jpg?w=800&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=d0f6fcd8ec66f70b4d630775581ef5414b9a0420834528815baded5187918819',
         },
       ],
     },
     testimonials: {
-      title: 'What our patients say',
-      intro:
-        'Vestibulum volutpat pretium libero. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc.',
+      title: 'Trusted by the healthcare industry',
+      intro: 'Clinics and organizations across regions rely on our expertise.',
     },
     years: {
-      title: 'Years of experience and lots of trust',
+      title: 'International reach, local impact',
       intro:
-        'Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet. Nunc interdum lacus sit amet orci. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.',
+        'Operating across the U.S., Dominican Republic, and Latin America, driving sustainable healthcare and operational efficiency. ',
       image:
         'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649ccd67f17cef2b13d65115_Combo%20Two.webp',
       list: [
-        'something amazing about Regler',
-        'we are commited and hard working',
+        'something amazing about us,',
+        'we are commited and hard working,',
         'we have a lot of experience',
       ],
       cta: {
-        label: 'About us',
+        label: 'Learn more',
         to: '/about',
       },
     },
     blog: {
-      title: 'Our latest articles',
+      title: 'Healthcare Insights & Perspectives',
       intro:
         'Vivamus quis mi. Phasellus viverra nulla ut metus varius laoreet.',
       cta: {
@@ -142,15 +155,16 @@ export default {
           },
           message: {
             label: 'How can we help you?',
-            placeholder: 'e.g., I am looking for healthcare outsourcing support...',
+            placeholder:
+              'e.g., I am looking for healthcare outsourcing support...',
           },
         },
         submitBtn: 'Submit',
       },
     },
     footer: {
-      rights: "All rights reserved",
-      developed: "Developed by"
-    }
+      rights: 'All rights reserved',
+      developed: 'Developed by',
+    },
   },
 };

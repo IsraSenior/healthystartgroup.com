@@ -15,8 +15,6 @@ useSeoMeta(page?.value?.seo);
 
 <template>
   <div>
-    <LangSwitcher />
-
     <section
       v-if="page?.hero"
       id="hero"
@@ -74,6 +72,7 @@ useSeoMeta(page?.value?.seo);
       id="home-services"
       class="pb-10 lg:pb-16 lg:pt-0 bg-secondary-50"
       :title="page?.services?.title"
+      :intro="page?.services?.intro"
       :services="services"
     />
 
@@ -93,26 +92,26 @@ useSeoMeta(page?.value?.seo);
           <div class="flex items-center justify-center">
             <div class="max-w-lg">
               <h3
-                class="text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+                class="text-3xl md:text-5xl text-secondary font-medium text-center lg:text-left mb-5"
               >
                 {{ page?.stats?.title }}
               </h3>
-              <p
+              <div
                 class="text-lg leading-relaxed text-secondary text-center lg:text-left font-medium"
+                v-html="page?.stats?.intro"
               >
-                {{ page?.stats?.intro }}
-              </p>
+              </div>
 
-              <div class="mt-10 grid grid-cols-2 gap-10">
+              <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-10">
                 <div
                   v-for="(stat, index) in page?.stats?.stats"
                   :key="index"
                   class="text-center lg:text-left"
                 >
-                  <span class="text-primary font-medium text-5xl lg:text-7xl">
+                  <span class="text-primary font-medium  text-3xl lg:text-5xl">
                     {{ stat?.value }}
                   </span>
-                  <p class="text-lg leading-relaxed text-secondary">
+                  <p class="text-base leading-relaxed text-secondary">
                     {{ stat?.label }}
                   </p>
                 </div>
@@ -139,7 +138,7 @@ useSeoMeta(page?.value?.seo);
           <div class="flex items-center justify-center">
             <div class="max-w-lg">
               <h3
-                class="text-5xl text-secondary font-medium text-center lg:text-left mb-5"
+                class="text-3xl md:text-5xl text-secondary font-medium text-center lg:text-left mb-5"
               >
                 {{ page?.years?.title }}
               </h3>

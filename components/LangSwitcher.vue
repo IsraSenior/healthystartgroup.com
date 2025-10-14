@@ -8,7 +8,8 @@ const availableLocales = computed(() => {
 </script>
 
 <template>
-    <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
-        {{ locale.name }}
+    <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)" :title="locale.name" class="flex items-center justify-center space-x-2.5 text-white hover:text-secondary font-medium">
+        <img :src="locale.flag" :alt="locale.name" class="w-auto h-6 rounded-sm">
+        <span>{{ locale.name }}</span>
     </NuxtLink>
 </template>

@@ -12,7 +12,7 @@ defineProps({
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
-          <div class="max-w-lg sticky top-10">
+          <div class="max-w-lg sticky top-32">
             <h2
               class="text-5xl text-secondary font-medium text-center lg:text-left mb-5"
             >

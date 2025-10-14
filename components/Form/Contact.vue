@@ -61,6 +61,7 @@ const fields = computed(() => props.content?.fields ?? {});
           id="email"
           class="block w-full rounded-full bg-transparent px-5 py-2.5 text-base text-secondary ring-2 ring-primary focus:ring-secondary placeholder:text-secondary sm:text-lg"
           :placeholder="fields?.email?.placeholder"
+          
         />
       </div>
     </div>

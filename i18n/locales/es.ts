@@ -2,30 +2,31 @@ export default {
   home: {
     seo: {
       title:
-        'Servicios médicos holísticos impulsados por la innovación y años de experiencia.',
+        'Soluciones globales en gestión sanitaria y desarrollo médico empresarial.',
       description:
-        'Somos un equipo de profesionales que ayudamos a otros a sentirse mejor con nuestros servicios premium.',
+        'HealthyStart Group es una compañía de servicios globales especializada en la optimización de operaciones médicas, atención al paciente y estrategias de expansión para el sector salud.',
       ogImage: '/og.png',
       twitterTitle:
-        'Servicios médicos holísticos impulsados por la innovación y años de experiencia.',
+        'Soluciones globales en gestión sanitaria y desarrollo médico empresarial.',
       twitterDescription:
-        'Somos un equipo de profesionales que ayudamos a otros a sentirse mejor con nuestros servicios premium.',
+        'HealthyStart Group es una compañía de servicios globales especializada en la optimización de operaciones médicas, atención al paciente y estrategias de expansión para el sector salud.',
       twitterImage: '/og.png',
     },
     hero: {
       title:
-        'Servicios médicos holísticos impulsados por la innovación y años de experiencia.',
+        'Soluciones globales en gestión sanitaria y desarrollo médico empresarial.',
       description:
-        'Somos un equipo de profesionales que ayudamos a otros a sentirse mejor con nuestros servicios premium.',
+        'HealthyStart Group es una compañía de servicios globales especializada en la optimización de operaciones médicas, atención al paciente y estrategias de expansión para el sector salud.',
       cta: {
-        label: 'Consulta gratis',
+        label: 'Solicita una reunión',
         to: '/contact',
       },
       image:
         'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp',
     },
     services: {
-      title: 'Nuestros servicios personalizados',
+      title: 'Nuestros servicios corporativos',
+      intro: 'Integrated solutions combining healthcare operations, technology, and strategic management.'
     },
     stats: {
       title: 'Años de experiencia y mucha confianza',
@@ -118,10 +119,10 @@ export default {
   sections: {
     contact: {
       title: 'Agenda una consulta gratuita',
-      intro: 'Completa el formulario o elige una de las otras opciones.',
+      intro: 'Completa el formulario o utiliza cualquiera de las opciones alternativas.',
       linksTitle: {
         mail: 'Nuestro correo',
-        whatsapp: 'WhatsApp',
+        whatsapp: 'WhatsApp / Teléfono',
         find: 'Encuéntranos',
         visit: 'Visítanos',
       },
@@ -130,19 +131,19 @@ export default {
         fields: {
           name: {
             label: 'Nombre completo',
-            placeholder: 'Juan Pérez',
+            placeholder: 'ej.: Ana Gómez',
           },
           phone: {
             label: 'Teléfono',
-            placeholder: '+57 300 0000',
+            placeholder: 'ej.: +1 (914) 2141242',
           },
           email: {
             label: 'Correo electrónico',
-            placeholder: 'Tu correo',
+            placeholder: 'e.g., ana.gomezemail.com',
           },
           message: {
             label: '¿Cómo podemos ayudarte?',
-            placeholder: 'Tengo un problema con...',
+            placeholder: 'ej.: Necesito soporte para implementar un Contact Center médico...',
           },
         },
         submitBtn: 'Enviar',
