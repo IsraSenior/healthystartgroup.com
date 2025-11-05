@@ -139,14 +139,12 @@ export default {
         {
           title: 'Applied innovation',
           intro: 'We develop adaptive solutions anticipating healthcare trends.',
-          image:
-            '/images/Applied-Innovation.jpg',
+          image: '/images/Applied-Innovation.jpg',
         },
         {
           title: 'Human development',
           intro: 'Empowering our people and partners through growth and education.',
-          image:
-            '/images/Human-Development.jpg',
+          image: '/images/Human-Development.jpg',
         },
       ],
     },
@@ -193,6 +191,7 @@ export default {
       'With 10+ years of experience, regional teams, and applied technology, we design, operate, and scale solutions for healthcare providers, insurers, and public-private organizations.',
     image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e8119dc7e03401459_value%201.webp',
     video: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cebb72b81d5ad821854fb_pexels-pavel-danilyuk-7579595%20(1080p)-transcode.mp4',
+    video2: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cebb72b81d5ad821854fb_pexels-pavel-danilyuk-7579595%20(1080p)-transcode.mp4',
 
     imageSection: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp',
 
@@ -217,13 +216,14 @@ export default {
     quote: {
       phrase:
         'At HealthyStart Group, we transform healthcare management through innovation, efficiency, and a human approach that connects outcomes with well-being.',
-      author: 'Executive Board',
-      author_title: 'HealthyStart Group',
-      author_avatar: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c107dbf28ab02a455276e_SmallPerson.webp',
+      author: 'Jose Martin',
+      author_title: 'CEO | HealthyStart Group',
+      author_avatar: '/images/team/jose-1080.jpg',
     },
     staff: {
       title: 'Our Essence',
-      intro: 'HealthyStart Group integrates clinical knowledge, operations management, and technology to strengthen healthcare providers, hospitals, and insurance networks. Our model combines BPO healthcare, analytics, and process design with measurable and regulatory-compliant outcomes.'
+      intro:
+        'HealthyStart Group integrates clinical knowledge, operations management, and technology to strengthen healthcare providers, hospitals, and insurance networks. Our model combines BPO healthcare, analytics, and process design with measurable and regulatory-compliant outcomes.',
     },
     values: {
       title: 'Corporate Values',
@@ -259,6 +259,6 @@ export default {
         label: 'Our services',
         to: '/services',
       },
-    }
+    },
   },
 };

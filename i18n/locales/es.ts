@@ -193,6 +193,7 @@ export default {
       'Con más de 10 años de experiencia, equipos regionales y tecnología aplicada, diseñamos, operamos y escalamos soluciones para proveedores de salud, aseguradoras y organizaciones público-privadas.',
     image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e8119dc7e03401459_value%201.webp',
     video: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cebb72b81d5ad821854fb_pexels-pavel-danilyuk-7579595%20(1080p)-transcode.mp4',
+    video2: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cebb72b81d5ad821854fb_pexels-pavel-danilyuk-7579595%20(1080p)-transcode.mp4',
     imageSection: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp',
   },
 };

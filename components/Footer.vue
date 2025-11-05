@@ -34,7 +34,7 @@ const { data: footer } = useI18nResource('sections.footer');
             Privacy Policy
           </NuxtLink>
 
-          <LangSwitcher />
+          <!-- <LangSwitcher /> -->
         </div>
       </div>
     </div>

@@ -23,8 +23,12 @@
                     </div>
 
                     <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
-                        <div v-if="page?.image" class="md:col-span-2 relative md:h-[65vh] overflow-hidden bg-secondary">
+                        <!-- <div v-if="page?.image" class="md:col-span-2 relative md:h-[65vh] overflow-hidden bg-secondary">
                             <img class="h-full w-full object-cover object-center" :src="page?.image" :alt="page?.title">
+                        </div> -->
+
+                        <div v-if="page?.video2" class="md:col-span-2 relative md:h-[65vh] overflow-hidden bg-secondary hidden md:block">
+                            <video class="h-full w-full object-cover object-center" autoplay muted playsinline="" :src="page?.video2"></video>
                         </div>
 
                         <div v-if="page?.video" class="relative md:h-[65vh] overflow-hidden bg-secondary hidden md:block">
