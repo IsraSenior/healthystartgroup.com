@@ -80,7 +80,7 @@ export default {
         label: 'Book a meeting',
         to: '/contact',
       },
-      image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp',
+      image: '/images/happy-senior-woman-at-wheelchair-spending-time-out.jpg',
     },
     services: {
       title: 'Our core services',
@@ -93,7 +93,7 @@ export default {
       image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0ef961f883c7e75994fa_combo.webp',
       stats: [
         {
-          label: 'patients managed annually',
+          label: 'Patients managed annually',
           value: '30k +',
         },
         {
@@ -101,7 +101,7 @@ export default {
           value: '5',
         },
         {
-          label: 'years of experience in healthcare and BPO management',
+          label: 'Years of experience in healthcare and BPO management',
           value: '10+',
         },
       ],
@@ -198,19 +198,19 @@ export default {
 
     indicators: [
       {
-        label: 'institutional clients',
+        label: 'Institutional clients',
         value: '80 +',
       },
       {
-        label: 'patients served annually',
+        label: 'Patients served annually',
         value: '30k +',
       },
       {
-        label: 'operational hubs in the U.S. and Latin America',
+        label: 'Operational hubs in the U.S. and Latin America',
         value: '5',
       },
       {
-        label: 'professionals in health, technology, and management',
+        label: 'Professionals in health, technology, and management',
         value: '150 +',
       },
     ],
