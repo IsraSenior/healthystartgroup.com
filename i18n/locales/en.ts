@@ -14,7 +14,7 @@ export default {
         fields: {
           name: {
             label: 'Full name',
-            placeholder: 'e.g., Ana Gómez',
+            placeholder: 'e.g., Anita Gómez',
           },
           phone: {
             label: 'Phone',
