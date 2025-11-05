@@ -162,54 +162,54 @@ useSeoMeta({
 .ripple {
   position: absolute;
   border-radius: 50%;
-  opacity: 0;
-  animation: ripple 15s infinite ease-out;
+  filter: blur(60px);
+  animation: ripple 12s infinite ease-in-out;
 }
 
 .ripple-1 {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(14, 170, 149, 0.15) 0%, transparent 70%);
-  top: 10%;
-  left: 10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(14, 170, 149, 0.4) 0%, rgba(14, 170, 149, 0.2) 40%, transparent 70%);
+  top: -10%;
+  left: -10%;
   animation-delay: 0s;
 }
 
 .ripple-2 {
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(0, 45, 116, 0.15) 0%, transparent 70%);
-  top: 50%;
-  right: 10%;
-  animation-delay: 5s;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0, 45, 116, 0.35) 0%, rgba(0, 45, 116, 0.15) 40%, transparent 70%);
+  top: 30%;
+  right: -15%;
+  animation-delay: 4s;
 }
 
 .ripple-3 {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(14, 170, 149, 0.1) 0%, transparent 70%);
-  bottom: 10%;
-  left: 50%;
-  animation-delay: 10s;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(14, 170, 149, 0.3) 0%, rgba(14, 170, 149, 0.15) 40%, transparent 70%);
+  bottom: -15%;
+  left: 30%;
+  animation-delay: 8s;
 }
 
 @keyframes ripple {
   0% {
-    transform: scale(0.8);
+    transform: scale(0.7) translate(0, 0);
     opacity: 0;
   }
-  20% {
-    opacity: 0.3;
+  15% {
+    opacity: 1;
   }
   50% {
-    transform: scale(1.2);
-    opacity: 0.2;
+    transform: scale(1.1) translate(20px, -20px);
+    opacity: 0.8;
   }
-  80% {
-    opacity: 0.1;
+  85% {
+    opacity: 0.3;
   }
   100% {
-    transform: scale(1.5);
+    transform: scale(1.4) translate(40px, -40px);
     opacity: 0;
   }
 }
