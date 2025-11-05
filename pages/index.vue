@@ -5,10 +5,10 @@ const { data: services } = await useLocalizedCollection('services', {
   key: 'home-services',
 });
 
-const { data: articles } = await useLocalizedCollection('articles', {
-  key: 'home-articles',
-  limit: 3,
-});
+// const { data: articles } = await useLocalizedCollection('articles', {
+//   key: 'home-articles',
+//   limit: 3,
+// });
 
 useSeoMeta(page?.value?.seo);
 </script>
@@ -126,11 +126,11 @@ useSeoMeta(page?.value?.seo);
 
     <SectionValues v-if="page?.values" :data="page?.values" />
 
-    <SectionTestimonialsSlider
+    <!-- <SectionTestimonialsSlider
       v-if="page?.testimonials"
       :data="page?.testimonials"
       class="bg-secondary-50"
-    />
+    /> -->
 
     <section v-if="page?.years" class="py-16 lg:py-32 bg-secondary-50">
       <div class="container">
@@ -177,7 +177,7 @@ useSeoMeta(page?.value?.seo);
       </div>
     </section>
 
-    <section v-if="page?.blog" class="py-16 lg:py-32">
+    <!-- <section v-if="page?.blog" class="py-16 lg:py-32">
       <div class="container">
         <div class="text-center max-w-2xl mx-auto">
           <h2 class="text-5xl text-secondary font-normal mb-5">
@@ -202,6 +202,6 @@ useSeoMeta(page?.value?.seo);
           }}</NuxtLink>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>

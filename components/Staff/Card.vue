@@ -9,9 +9,9 @@
 
 <template>
     <div>
-        <div class="aspect-square overflow-hidden">
+        <!-- <div class="aspect-square overflow-hidden">
             <img :src="person?.image" :alt="person?.name" class="h-full w-full object-cover object-center">
-        </div>
+        </div> -->
         <div class="p-5 text-center space-y-5">
             <h4 class="text-2xl text-secondary font-normal">
                 {{ person?.name }}

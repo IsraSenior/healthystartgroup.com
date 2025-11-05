@@ -42,10 +42,10 @@ export default {
           label: 'Services',
           to: '/services',
         },
-        {
-          label: 'Blog',
-          to: '/articles',
-        },
+        // {
+        //   label: 'Blog',
+        //   to: '/articles',
+        // },
         {
           label: 'Contact us',
           to: '/contact',

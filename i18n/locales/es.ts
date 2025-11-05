@@ -22,7 +22,7 @@ export default {
           },
           email: {
             label: 'Correo electrónico',
-            placeholder: 'Ej.: ana.gomez@email.com',
+            placeholder: 'Ej.: ana.gomezemail.com',
           },
           message: {
             label: '¿Cómo podemos ayudarte?',
@@ -42,10 +42,10 @@ export default {
           label: 'Servicios',
           to: '/services',
         },
-        {
-          label: 'Blog',
-          to: '/articles',
-        },
+        // {
+        //   label: 'Blog',
+        //   to: '/articles',
+        // },
         {
           label: 'Contáctanos',
           to: '/contact',
