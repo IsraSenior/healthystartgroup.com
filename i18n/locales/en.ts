@@ -109,9 +109,9 @@ export default {
     quote: {
       phrase:
         'At HealthyStart Group, we transform healthcare management through innovation, efficiency, and a human approach that connects outcomes with well-being.',
-      author: 'Executive Board',
-      author_title: 'HealthyStart Group',
-      author_avatar: '/images/jose-1080.jpg',
+      author: 'Jose Martin',
+      author_title: 'CEO | HealthyStart Group',
+      author_avatar: '/images/team/jose-1080.jpg',
     },
     values: {
       title: 'Our core values',
@@ -124,29 +124,29 @@ export default {
         {
           title: 'Commitment to quality',
           intro: 'Every project follows international standards for healthcare and operations.',
-          image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e8119dc7e03401459_value%201.webp',
+          image: '/images/Commitment-to-Quality.jpg',
         },
         {
           title: 'Operational efficiency',
           intro: 'We optimize resources, processes, and data to improve results.',
-          image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e3cca037a7a73db21_value%202.webp',
+          image: '/images/Operational-Efficiency.jpg',
         },
         {
           title: 'Transparency & compliance',
           intro: 'Integrity and regulatory compliance are central to our partnerships.',
-          image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130ee68c4b1212f89840_value%203.webp',
+          image: '/images/Transparency-Compliance.jpg',
         },
         {
           title: 'Applied innovation',
           intro: 'We develop adaptive solutions anticipating healthcare trends.',
           image:
-            'https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/8d/3d/31/ef/ea/v1_E10/E1057WLP.jpg?w=800&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=1769db2c1094f25f6e22578fe52cf1a0e24c46d0e123aba4bdec391fa91d510f',
+            '/images/Applied-Innovation.jpg',
         },
         {
           title: 'Human development',
           intro: 'Empowering our people and partners through growth and education.',
           image:
-            'https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/5d/37/11/21/77/v1_E11/E11HSXH.jpg?w=800&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=d0f6fcd8ec66f70b4d630775581ef5414b9a0420834528815baded5187918819',
+            '/images/Human-Development.jpg',
         },
       ],
     },
