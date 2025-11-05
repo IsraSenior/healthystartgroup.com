@@ -111,7 +111,7 @@ export default {
         'At HealthyStart Group, we transform healthcare management through innovation, efficiency, and a human approach that connects outcomes with well-being.',
       author: 'Executive Board',
       author_title: 'HealthyStart Group',
-      author_avatar: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c107dbf28ab02a455276e_SmallPerson.webp',
+      author_avatar: '/images/jose-1080.jpg',
     },
     values: {
       title: 'Our core values',
