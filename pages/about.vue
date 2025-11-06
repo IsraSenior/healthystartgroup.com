@@ -27,8 +27,8 @@
                             <img class="h-full w-full object-cover object-center" :src="page?.image" :alt="page?.title">
                         </div> -->
 
-                        <div v-if="page?.video2" class="md:col-span-2 relative md:h-[65vh] overflow-hidden bg-secondary hidden md:block">
-                            <video class="h-full w-full object-cover object-center" autoplay muted playsinline="" :src="page?.video2"></video>
+                        <div v-if="page?.video2" class="md:col-span-2 relative isolate md:h-[65vh] overflow-hidden bg-secondary hidden md:block">
+                            <video class="h-full w-full object-cover object-center absolute" autoplay muted playsinline="" :src="page?.video2"></video>
                         </div>
 
                         <div v-if="page?.video" class="relative md:h-[65vh] overflow-hidden bg-secondary hidden md:block">
