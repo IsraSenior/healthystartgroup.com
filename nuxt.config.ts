@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   i18n: {
     locales: [
       { code: 'en', name: 'English', language: 'en-US', file: 'en.ts', flag: 'https://flagicons.lipis.dev/flags/4x3/us.svg' },
-      { code: 'es', name: 'Spanish', language: 'es-DO', file: 'es.ts', flag: 'https://flagicons.lipis.dev/flags/4x3/do.svg' },
+      // { code: 'es', name: 'Spanish', language: 'es-DO', file: 'es.ts', flag: 'https://flagicons.lipis.dev/flags/4x3/do.svg' },
     ],
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
