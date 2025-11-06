@@ -236,7 +236,7 @@ export default {
         {
           title: 'Measured Results',
           intro: 'KPIs and audit trails for continuous improvement.',
-          image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e8119dc7e03401459_value%201.webp',
+          image: '/Measured-Results.webp',
         },
         {
           title: 'Effective Communication',
