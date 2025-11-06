@@ -191,7 +191,7 @@ export default {
       'With 10+ years of experience, regional teams, and applied technology, we design, operate, and scale solutions for healthcare providers, insurers, and public-private organizations.',
     image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e8119dc7e03401459_value%201.webp',
     video: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cebb72b81d5ad821854fb_pexels-pavel-danilyuk-7579595%20(1080p)-transcode.mp4',
-    video2: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cebb72b81d5ad821854fb_pexels-pavel-danilyuk-7579595%20(1080p)-transcode.mp4',
+    video2: '/video-2.mp4',
 
     imageSection: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp',
 
