@@ -20,5 +20,10 @@
     "@tailwindcss/vite": "^4.1.0",
     "tailwindcss": "^4.1.0"
   },
+  "pnpm": {
+    "overrides": {
+      "better-sqlite3": "npm:@libsql/client@^0.15.2"
+    }
+  },
   "packageManager": "pnpm@10.20.0"
 }
