@@ -89,8 +89,11 @@
   }
 }
 
+
+
 @layer utilities {
   .container {
     @apply mx-auto max-w-[85rem] px-5;
   }
 }
+
