@@ -345,13 +345,15 @@ onBeforeUnmount(() => {
             {{ props?.intro }}
           </p>
         </div>
-        <div class="md:col-span-1 flex items-end justify-center lg:justify-end">
+        <!-- Desktop arrows - hidden on mobile -->
+        <div class="hidden md:flex md:col-span-1 items-end justify-center lg:justify-end">
           <div class="space-x-5">
             <button
               type="button"
-              class="text-secondary hover:text-primary cursor-pointer prev disabled:opacity-40 disabled:cursor-not-allowed"
+              class="text-secondary hover:text-primary cursor-pointer prev disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
               @click="handlePrevClick"
               :disabled="!canSlide"
+              :tabindex="canSlide ? 0 : -1"
               aria-label="Previous service"
             >
               <svg
@@ -372,9 +374,10 @@ onBeforeUnmount(() => {
 
             <button
               type="button"
-              class="text-secondary hover:text-primary cursor-pointer next disabled:opacity-40 disabled:cursor-not-allowed"
+              class="text-secondary hover:text-primary cursor-pointer next disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
               @click="handleNextClick"
               :disabled="!canSlide"
+              :tabindex="canSlide ? 0 : -1"
               aria-label="Next service"
             >
               <svg
@@ -418,6 +421,59 @@ onBeforeUnmount(() => {
           <ServicesCard :service="slide.service" />
         </li>
       </ul>
+    </div>
+
+    <!-- Mobile arrows - below carousel, centered -->
+    <div class="md:hidden flex items-center justify-center mt-10">
+      <div class="space-x-5">
+        <button
+          type="button"
+          class="text-secondary hover:text-primary cursor-pointer prev disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+          @click="handlePrevClick"
+          :disabled="!canSlide"
+          :tabindex="canSlide ? 0 : -1"
+          aria-label="Previous service"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+            />
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="text-secondary hover:text-primary cursor-pointer next disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+          @click="handleNextClick"
+          :disabled="!canSlide"
+          :tabindex="canSlide ? 0 : -1"
+          aria-label="Next service"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
 </template>

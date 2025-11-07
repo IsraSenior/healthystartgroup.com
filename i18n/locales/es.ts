@@ -55,6 +55,10 @@ export default {
         label: 'Solicita una consulta',
         to: '/contact',
       },
+      cta2: {
+        label: 'Estamos contratando',
+        to: 'https://forms.gle/8LiLoreLtbrC9fZx6',
+      },
     },
     footer: {
       rights: 'Todos los derechos reservados',

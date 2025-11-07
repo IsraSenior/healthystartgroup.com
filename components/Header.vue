@@ -35,7 +35,8 @@ const offcanvasStatus = ref(false)
                         <NuxtLink v-for="(item, index) in header.menu" :key="index" :to="item.to">{{ item.label }}</NuxtLink>
                     </nav>
                     
-                    <div class="lg:flex">
+                    <div class="lg:flex space-x-5">
+                        <a target="_blank" :href="header.cta2.to" class="btn outline primary hidden lg:block">{{header.cta2.label}}</a>
                         <NuxtLink :to="header.cta.to" class="btn primary hidden lg:block">{{header.cta.label}}</NuxtLink>
 
                         <button class="text-white hover:text-primary lg:hidden" @click.prevent="toogleOffcanva">
@@ -53,6 +54,9 @@ const offcanvasStatus = ref(false)
                 <div class="space-y-10 px-5">
                     <div class="flex flex-col items-center justify-center space-y-2.5 nav-header-mobile">
                         <NuxtLink @click.native="toogleOffcanva" v-for="(item, index) in header.menu" :key="index" :to="item.to">{{ item.label }}</NuxtLink>
+                    </div>
+                    <div class="space-y-10 flex flex-col items-center justify-center">
+                        <a target="_blank" :href="header.cta2.to" @click.native="toogleOffcanva" class="btn outline primary">{{header.cta2.label}}</a>
                     </div>
                     <div class="space-y-10 flex flex-col items-center justify-center">
                         <NuxtLink @click.native="toogleOffcanva" :to="header.cta.to" class="btn primary">{{header.cta.label}}</NuxtLink>

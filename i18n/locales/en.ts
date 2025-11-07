@@ -55,6 +55,10 @@ export default {
         label: 'Request a consultation',
         to: '/contact',
       },
+      cta2: {
+        label: 'We are hiring',
+        to: 'https://forms.gle/8LiLoreLtbrC9fZx6',
+      },
     },
     footer: {
       rights: 'All rights reserved',

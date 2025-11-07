@@ -96,10 +96,10 @@ const { data: contact } = useI18nResource('sections.contact');
                   </p>
                   <p class="text-lg leading-relaxed font-normal">
                     <a
-                      href="https://api.whatsapp.com/send?phone=19142141242"
+                      href="https://api.whatsapp.com/send?phone=13473738669"
                       target="_blank"
                       class="hover:underline underline-offset-4"
-                      >+1 (914) 2141242</a
+                      >+1 (347) 373-8669</a
                     >
                   </p>
                 </div>
@@ -138,7 +138,7 @@ const { data: contact } = useI18nResource('sections.contact');
                     {{ contact?.linksTitle?.find }}
                   </p>
                   <p class="text-lg leading-relaxed font-normal">
-                    <a href="https://maps.app.goo.gl/4DPj5EtCu2mWf7VW9" target="_blank" class="hover:underline underline-offset-4">Open Google Maps</a>
+                    <a href="https://maps.app.goo.gl/1tfcAZe3b39cctiN7" target="_blank" class="hover:underline underline-offset-4">Open Google Maps</a>
                   </p>
                 </div>
               </li>
