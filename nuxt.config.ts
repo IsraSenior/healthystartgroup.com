@@ -18,6 +18,9 @@ export default defineNuxtConfig({
   },
 
   content: {
+    database: {
+      type: 'libsql',
+    },
     build: {
       markdown: {
         toc: {
