@@ -1,5 +1,6 @@
 <script setup>
 const { data: page } = useI18nResource('home');
+const localePath = useLocalePath();
 
 const { data: services } = await useLocalizedCollection('services', {
   key: 'home-services',
@@ -38,7 +39,7 @@ useSeoMeta(page?.value?.seo);
               >
                 {{ page?.hero?.description }}
               </p>
-              <NuxtLink :to="page?.hero?.cta?.to || '/'" class="btn primary">
+              <NuxtLink :to="localePath(page?.hero?.cta?.to || '/')" class="btn primary">
                 {{ page?.hero?.cta?.label }}
               </NuxtLink>
             </div>
@@ -157,7 +158,7 @@ useSeoMeta(page?.value?.seo);
               </ul>
 
               <div>
-                <NuxtLink :to="page?.years?.cta.to" class="btn secondary">{{
+                <NuxtLink :to="localePath(page?.years?.cta.to)" class="btn secondary">{{
                   page?.years?.cta.label
                 }}</NuxtLink>
               </div>
@@ -197,7 +198,7 @@ useSeoMeta(page?.value?.seo);
         </div>
 
         <div class="flex items-center justify-center mt-16">
-          <NuxtLink :to="page?.blog?.cta.to" class="btn secondary">{{
+          <NuxtLink :to="localePath(page?.blog?.cta.to)" class="btn secondary">{{
             page?.blog?.cta.label
           }}</NuxtLink>
         </div>

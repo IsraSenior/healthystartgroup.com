@@ -70,11 +70,12 @@ export default {
       title: 'Soluciones globales en gestión sanitaria y desarrollo médico empresarial.',
       description:
         'HealthyStart Group es una empresa de servicios global especializada en optimizar operaciones médicas, gestión de pacientes y estrategias de expansión para el sector salud.',
-      ogImage: '/og.png',
+      ogImage: '/HealthyStart_Group_og2.webp',
+      ogImageAlt: 'HealthyStart Group - Servicios de Salud',
       twitterTitle: 'Soluciones globales en gestión sanitaria y desarrollo médico empresarial.',
       twitterDescription:
         'HealthyStart Group es una empresa de servicios global especializada en optimizar operaciones médicas, gestión de pacientes y estrategias de expansión para el sector salud.',
-      twitterImage: '/og.png',
+      twitterImage: '/HealthyStart_Group_og2.webp',
     },
     hero: {
       title: 'Soluciones globales en gestión sanitaria y desarrollo médico empresarial.',
@@ -113,9 +114,9 @@ export default {
     quote: {
       phrase:
         'En HealthyStart Group transformamos la gestión de la salud a través de la innovación, la eficiencia y un enfoque humano que conecta los resultados con el bienestar.',
-      author: 'Dirección General',
-      author_title: 'HealthyStart Group',
-      author_avatar: '/images/jose-1080.jpg',
+      author: 'Jose Martin',
+      author_title: 'CEO | HealthyStart Group',
+      author_avatar: '/images/team/jose-1080.jpg',
     },
     values: {
       title: 'Nuestros valores fundamentales',
@@ -197,7 +198,74 @@ export default {
       'Con más de 10 años de experiencia, equipos regionales y tecnología aplicada, diseñamos, operamos y escalamos soluciones para proveedores de salud, aseguradoras y organizaciones público-privadas.',
     image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e8119dc7e03401459_value%201.webp',
     video: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cebb72b81d5ad821854fb_pexels-pavel-danilyuk-7579595%20(1080p)-transcode.mp4',
-    video2: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649cebb72b81d5ad821854fb_pexels-pavel-danilyuk-7579595%20(1080p)-transcode.mp4',
+    video2: '/video-2.mp4',
+
     imageSection: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c0a074b09fc92d787d906_herohome.webp',
+
+    indicators: [
+      {
+        label: 'Clientes institucionales',
+        value: '80 +',
+      },
+      {
+        label: 'Pacientes atendidos anualmente',
+        value: '30k +',
+      },
+      {
+        label: 'Centros de operación en EE.UU. y Latinoamérica',
+        value: '5',
+      },
+      {
+        label: 'Profesionales en salud, tecnología y gestión',
+        value: '150 +',
+      },
+    ],
+    quote: {
+      phrase:
+        'En HealthyStart Group transformamos la gestión de la salud a través de la innovación, la eficiencia y un enfoque humano que conecta los resultados con el bienestar.',
+      author: 'Jose Martin',
+      author_title: 'CEO | HealthyStart Group',
+      author_avatar: '/images/team/jose-1080.jpg',
+    },
+    staff: {
+      title: 'Nuestra Esencia',
+      intro:
+        'HealthyStart Group integra conocimiento clínico, gestión de operaciones y tecnología para fortalecer proveedores de salud, hospitales y redes de seguros. Nuestro modelo combina BPO sanitario, analítica y diseño de procesos con resultados medibles y conformes a normativas.',
+    },
+    values: {
+      title: 'Valores Corporativos',
+      intro: 'El liderazgo ético, la innovación continua y la excelencia operativa definen nuestro trabajo.',
+      cta: {
+        label: 'Contáctanos',
+        to: '/contact',
+      },
+      values: [
+        {
+          title: 'Resultados Medibles',
+          intro: 'KPIs y trazabilidad de auditorías para mejora continua.',
+          image: '/Measured-Results.webp',
+        },
+        {
+          title: 'Comunicación Efectiva',
+          intro: 'Soporte omnicanal alineado con estándares de privacidad médica.',
+          image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130e3cca037a7a73db21_value%202.webp',
+        },
+        {
+          title: 'Excelencia Profesional',
+          intro: 'Personal certificado, educación continua y cumplimiento de regulaciones internacionales.',
+          image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649c130ee68c4b1212f89840_value%203.webp',
+        },
+      ],
+    },
+    exp: {
+      title: 'Experiencia y Confiabilidad',
+      intro: 'Mejoramos la eficiencia operativa mediante rediseño Lean, automatización, integración CRM y tableros de analítica en tiempo real.',
+      image: 'https://cdn.prod.website-files.com/649be2f4a7f56f80c8b40711/649ccd67f17cef2b13d65115_Combo%20Two.webp',
+      list: ['algo increíble sobre nosotros,', 'somos comprometidos y trabajadores,', 'tenemos amplia experiencia'],
+      cta: {
+        label: 'Nuestros servicios',
+        to: '/services',
+      },
+    },
   },
 };

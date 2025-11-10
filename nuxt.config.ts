@@ -17,6 +17,15 @@ export default defineNuxtConfig({
     },
   },
 
+  site: {
+    url: 'https://www.healthystartgroup.com',
+    name: 'HealthyStart Group',
+  },
+
+  ogImage: {
+    enabled: true,
+  },
+
   content: {
     build: {
       markdown: {
@@ -34,7 +43,7 @@ export default defineNuxtConfig({
   i18n: {
     locales: [
       { code: 'en', name: 'English', language: 'en-US', file: 'en.ts', flag: 'https://flagicons.lipis.dev/flags/4x3/us.svg' },
-      // { code: 'es', name: 'Spanish', language: 'es-DO', file: 'es.ts', flag: 'https://flagicons.lipis.dev/flags/4x3/do.svg' },
+      { code: 'es', name: 'Spanish', language: 'es-DO', file: 'es.ts', flag: 'https://flagicons.lipis.dev/flags/4x3/do.svg' },
     ],
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
@@ -47,6 +56,25 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root', // Recommended for SEO
+    },
+    customRoutes: 'config',
+    pages: {
+      about: {
+        en: '/about',
+        es: '/acerca-de',
+      },
+      'services/index': {
+        en: '/services',
+        es: '/servicios',
+      },
+      contact: {
+        en: '/contact',
+        es: '/contacto',
+      },
+      'articles/index': {
+        en: '/articles',
+        es: '/articulos',
+      },
     },
   },
 });

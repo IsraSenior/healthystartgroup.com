@@ -1,5 +1,6 @@
 <script setup>
 const { data: footer } = useI18nResource('sections.footer');
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -28,13 +29,13 @@ const { data: footer } = useI18nResource('sections.footer');
         </p>
         <div class="flex flex-col lg:flex-row items-center justify-between space-y-5 md:space-y-0 md:space-x-10">
           <NuxtLink
-            to="/privacy-policies"
+            :to="localePath('/privacy-policies')"
             class="text-white text-lg hover:underline hover:text-secondary font-meidum underline-offset-4 font-normal"
           >
             Privacy Policy
           </NuxtLink>
 
-          <!-- <LangSwitcher /> -->
+          <LangSwitcher />
         </div>
       </div>
     </div>

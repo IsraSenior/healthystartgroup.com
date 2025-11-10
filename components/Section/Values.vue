@@ -5,6 +5,8 @@ defineProps({
     required: true,
   },
 });
+
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -22,7 +24,7 @@ defineProps({
               {{ data?.intro }}
             </p>
 
-            <NuxtLink :to="data?.cta?.to" class="btn secondary">
+            <NuxtLink :to="localePath(data?.cta?.to)" class="btn secondary">
               {{ data?.cta?.label }}
             </NuxtLink>
           </div>

@@ -3,6 +3,22 @@
     const { data: staff } = await useLocalizedCollection('staff', {
         key: 'staff',
     });
+
+    const { locale } = useI18n();
+    const localePath = useLocalePath();
+
+    useSeoMeta({
+        title: page?.value?.title,
+        description: page?.value?.intro,
+        ogTitle: page?.value?.title,
+        ogDescription: page?.value?.intro,
+        ogImage: '/HealthyStart_Group_og2.webp',
+        ogImageAlt: locale.value === 'es' ? 'HealthyStart Group - Servicios de Salud' : 'HealthyStart Group - Healthcare Services',
+        twitterCard: 'summary_large_image',
+        twitterTitle: page?.value?.title,
+        twitterDescription: page?.value?.intro,
+        twitterImage: '/HealthyStart_Group_og2.webp',
+    });
 </script>
 
 <template>
@@ -119,7 +135,7 @@
                             </ul>
 
                             <div>
-                                <NuxtLink :to="page?.exp?.cta.to" class="btn secondary">{{
+                                <NuxtLink :to="localePath(page?.exp?.cta.to)" class="btn secondary">{{
                                 page?.exp?.cta.label
                                 }}</NuxtLink>
                             </div>

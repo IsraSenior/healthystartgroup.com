@@ -70,11 +70,12 @@ export default {
       title: 'Global healthcare management and enterprise medical development solutions.',
       description:
         'HealthyStart Group is a global service company specializing in optimizing medical operations, patient management, and business expansion strategies across the healthcare sector.',
-      ogImage: '/og.png',
+      ogImage: '/HealthyStart_Group_og2.webp',
+      ogImageAlt: 'HealthyStart Group - Healthcare Services',
       twitterTitle: 'Global healthcare management and enterprise medical development solutions.',
       twitterDescription:
         'HealthyStart Group is a global service company specializing in optimizing medical operations, patient management, and business expansion strategies across the healthcare sector.',
-      twitterImage: '/og.png',
+      twitterImage: '/HealthyStart_Group_og2.webp',
     },
     hero: {
       title: 'Global healthcare management and enterprise medical development solutions.',

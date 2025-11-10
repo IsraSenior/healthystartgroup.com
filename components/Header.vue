@@ -1,5 +1,6 @@
 <script setup>
 const { data: header } = useI18nResource('sections.header');
+const localePath = useLocalePath();
 const isFixed = ref(false);
 
 const handleScroll = () => {
@@ -26,18 +27,18 @@ const offcanvasStatus = ref(false)
         <div class="container py-3.5 relative">
             <div class="flex items-center justify-between">
                 <div>
-                    <NuxtLink to="/">
+                    <NuxtLink :to="localePath('/')">
                         <Logo class="h-12 md:h-14" primary="text-primary" secondary="text-white" />
                     </NuxtLink>
                 </div>
                 <div class="flex items-center justify-end space-x-10">
                     <nav class="items-center justify-center space-x-10 nav-header hidden lg:flex">
-                        <NuxtLink v-for="(item, index) in header.menu" :key="index" :to="item.to">{{ item.label }}</NuxtLink>
+                        <NuxtLink v-for="(item, index) in header.menu" :key="index" :to="localePath(item.to)">{{ item.label }}</NuxtLink>
                     </nav>
-                    
+
                     <div class="lg:flex space-x-5">
                         <a target="_blank" :href="header.cta2.to" class="btn outline primary hidden lg:block">{{header.cta2.label}}</a>
-                        <NuxtLink :to="header.cta.to" class="btn primary hidden lg:block">{{header.cta.label}}</NuxtLink>
+                        <NuxtLink :to="localePath(header.cta.to)" class="btn primary hidden lg:block">{{header.cta.label}}</NuxtLink>
 
                         <button class="text-white hover:text-primary lg:hidden" @click.prevent="toogleOffcanva">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
@@ -53,13 +54,13 @@ const offcanvasStatus = ref(false)
             <div v-if="offcanvasStatus" class="bg-secondary w-full  min-h-[70vh] absolute inset-x-0 top-full py-10">
                 <div class="space-y-10 px-5">
                     <div class="flex flex-col items-center justify-center space-y-2.5 nav-header-mobile">
-                        <NuxtLink @click.native="toogleOffcanva" v-for="(item, index) in header.menu" :key="index" :to="item.to">{{ item.label }}</NuxtLink>
+                        <NuxtLink @click.native="toogleOffcanva" v-for="(item, index) in header.menu" :key="index" :to="localePath(item.to)">{{ item.label }}</NuxtLink>
                     </div>
                     <div class="space-y-10 flex flex-col items-center justify-center">
                         <a target="_blank" :href="header.cta2.to" @click.native="toogleOffcanva" class="btn outline primary">{{header.cta2.label}}</a>
                     </div>
                     <div class="space-y-10 flex flex-col items-center justify-center">
-                        <NuxtLink @click.native="toogleOffcanva" :to="header.cta.to" class="btn primary">{{header.cta.label}}</NuxtLink>
+                        <NuxtLink @click.native="toogleOffcanva" :to="localePath(header.cta.to)" class="btn primary">{{header.cta.label}}</NuxtLink>
                     </div>
                 </div>
             </div>
