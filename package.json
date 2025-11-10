@@ -10,20 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@libsql/client": "^0.15.2",
     "@nuxt/content": "^3.7.1",
     "@nuxtjs/i18n": "^10.1.0",
     "@nuxtjs/seo": "^3.2.2",
+    "better-sqlite3": "^12.4.1",
     "nuxt": "^4.1.2"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.0",
     "tailwindcss": "^4.1.0"
   },
-  "pnpm": {
-    "overrides": {
-      "better-sqlite3": "npm:@libsql/client@^0.15.2"
-    }
-  },
-  "packageManager": "pnpm@10.20.0"
+  "packageManager": "pnpm@10.21.0+sha512.da3337267e400fdd3d479a6c68079ac6db01d8ca4f67572083e722775a796788a7a9956613749e000fac20d424b594f7a791a5f4e2e13581c5ef947f26968a40"
 }

@@ -1,0 +1,3 @@
+# Enable build scripts for specific packages that need native compilation
+# Required for better-sqlite3 (used by @nuxt/content), esbuild, and @parcel/watcher
+scripts-allow-list=better-sqlite3,esbuild,@parcel/watcher

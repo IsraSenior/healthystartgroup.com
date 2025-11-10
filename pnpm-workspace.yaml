@@ -1,0 +1,3 @@
+# ignoredBuiltDependencies removed to allow better-sqlite3 native module compilation
+# This is required for Nuxt Content to work properly with pnpm
+# Date: 2025-11-10
