@@ -176,7 +176,7 @@ const { data: contact } = useI18nResource('sections.contact');
               class="flex items-center justify-start gap-5 w-full"
             >
               <!-- LinkedIn -->
-              <a
+              <!-- <a
                 href="#" target="_blank"
                 class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
                 aria-label="LinkedIn"
@@ -192,7 +192,7 @@ const { data: contact } = useI18nResource('sections.contact');
                     d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z"
                   ></path>
                 </svg>
-              </a>
+              </a> -->
               <!-- Facebook -->
               <a
                 href="https://www.facebook.com/healthystartgroup/" target="_blank"
@@ -233,7 +233,7 @@ const { data: contact } = useI18nResource('sections.contact');
                 </svg>
               </a>
               <!-- Yotube -->
-              <a
+              <!-- <a
                 href="#" target="_blank"
                 class="group inline-flex items-center justify-center rounded-full p-3 transition hover:bg-primary text-white"
                 aria-label="YouTube"
@@ -249,7 +249,7 @@ const { data: contact } = useI18nResource('sections.contact');
                     d="M21.593 7.203a2.5 2.5 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.52 2.52 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831M9.996 15.005l.005-6 5.207 3.005z"
                   ></path>
                 </svg>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
