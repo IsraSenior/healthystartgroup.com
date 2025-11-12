@@ -96,10 +96,10 @@ const { data: contact } = useI18nResource('sections.contact');
                   </p>
                   <p class="text-lg leading-relaxed font-normal">
                     <a
-                      href="https://api.whatsapp.com/send?phone=13473738669"
+                      href="https://api.whatsapp.com/send?phone=17162320795"
                       target="_blank"
                       class="hover:underline underline-offset-4"
-                      >+1 (347) 373-8669</a
+                      >+1 (716) 232-0795</a
                     >
                   </p>
                 </div>
