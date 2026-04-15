@@ -138,7 +138,7 @@ const { data: contact } = useI18nResource('sections.contact');
                     {{ contact?.linksTitle?.find }}
                   </p>
                   <p class="text-lg leading-relaxed font-normal">
-                    <a href="https://maps.app.goo.gl/1tfcAZe3b39cctiN7" target="_blank" class="hover:underline underline-offset-4">Open Google Maps</a>
+                    <a href="https://maps.app.goo.gl/su6a4vGu9NmEYEVZ7" target="_blank" class="hover:underline underline-offset-4">Open Google Maps</a>
                   </p>
                 </div>
               </li>
