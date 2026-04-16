@@ -102,7 +102,7 @@
                     </div>
 
 
-                    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10">
+                    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                         <StaffCard v-for="(person, index) in staff" :key="index" :person="person?.meta" />
                     </div>
                 </div>
